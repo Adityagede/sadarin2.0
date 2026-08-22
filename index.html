@@ -166,6 +166,7 @@
       </div>
     </nav>
   </header>
+
   <main>
     <!-- =====================================================
          HERO SLIDER
@@ -316,19 +317,13 @@
         </div>
       </div>
     </section>
+
     <!-- =========================================================
      02 — WASTE REALITY
 ========================================================= -->
 <section class="waste-reality" id="realitas-sampah">
   <div class="waste-reality__container">
     <div class="waste-reality__top" data-reveal>
-      <div class="waste-reality__eyebrow">
-        <span class="waste-reality__number">02</span>
-        <span class="waste-reality__line"></span>
-        <span class="waste-reality__label">
-          REALITAS SAMPAH
-        </span>
-      </div>
       <p class="waste-reality__side-note">
         SEBELUM MEMILAH,<br>
         PAHAMI MASALAHNYA.
@@ -429,11 +424,6 @@
   <div class="sadarin-tools__container">
     <!-- SECTION HEADER -->
     <div class="sadarin-tools__header">
-      <div class="sadarin-tools__eyebrow">
-        <span>03</span>
-        <span class="sadarin-tools__eyebrow-line"></span>
-        <span>RUANG AKSIMU</span>
-      </div>
       <div class="sadarin-tools__intro">
         <h2>
           Dari kebiasaan kecil,
@@ -446,212 +436,107 @@
         </p>
       </div>
     </div>
-    <!-- FEATURE GRID -->
     <div class="sadarin-tools__grid">
-      <!-- 01 — JEJAK HIJAU -->
-      <article class="sadarin-tool-card sadarin-tool-card--primary">
-        <div class="sadarin-tool-card__top">
-          <span class="sadarin-tool-card__index">
-            01
-          </span>
-          <div class="sadarin-tool-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48">
-              <path
-                d="M14 11h20M18 11l1.3-4h9.4L30 11M17 16l1.4 21h11.2L31 16M22 21v11M27 21v11"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
+      <article
+        class="sadarin-tool-card sadarin-tool-card--primary"
+        tabindex="0"
+        aria-labelledby="jejak-hijau-title"
+        aria-describedby="jejak-hijau-description"
+      >
+        <div class="sadarin-tool-card__visual">
+          <img
+            class="sadarin-tool-card__image sadarin-tool-card__image--chart"
+            src="assets/images/features/jejak-hijau.png"
+            alt="Grafik batang yang meningkat untuk Jejak Hijau"
+          >
         </div>
         <div class="sadarin-tool-card__body">
-          <span class="sadarin-tool-card__meta">
-            CATAT • KENALI • UBAH
-          </span>
-          <h3>Jejak Hijau</h3>
-          <p>
+          <h3 id="jejak-hijau-title">Jejak Hijau</h3>
+          <p class="sadarin-tool-card__description" id="jejak-hijau-description">
             Catat sampah yang kamu hasilkan setiap hari dan mulai
             mengenali pola kecil dari kebiasaanmu sendiri.
           </p>
         </div>
-        <div class="sadarin-tool-card__footer">
-          <span>Mulai dari catatan harian</span>
-          <span class="sadarin-tool-card__arrow">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M5 12h14M13 6l6 6-6 6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
+        <div class="sadarin-tool-card__action">
+          <span>Mulai mencatat</span>
+          <span class="sadarin-tool-card__action-arrow" aria-hidden="true">→</span>
         </div>
       </article>
-      <!-- 02 — BUMI METER -->
-      <article class="sadarin-tool-card">
-        <div class="sadarin-tool-card__top">
-          <span class="sadarin-tool-card__index">
-            02
-          </span>
-          <div class="sadarin-tool-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48">
-              <circle
-                cx="24"
-                cy="24"
-                r="15"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              />
-              <path
-                d="M14.5 25.5h19M24 15v4M17 18l3 3M31 18l-3 3M24 25l7-5"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
+      <article
+        class="sadarin-tool-card"
+        tabindex="0"
+        aria-labelledby="bumi-meter-title"
+        aria-describedby="bumi-meter-description"
+      >
+        <div class="sadarin-tool-card__visual">
+          <img
+            class="sadarin-tool-card__image sadarin-tool-card__image--earth"
+            src="assets/images/features/bumi-meter.png"
+            alt="Ilustrasi Bumi hijau untuk Bumi Meter"
+          >
         </div>
         <div class="sadarin-tool-card__body">
-          <span class="sadarin-tool-card__meta">
-            UKUR • PAHAMI • BANDINGKAN
-          </span>
-          <h3>Bumi Meter</h3>
-          <p>
+          <h3 id="bumi-meter-title">Bumi Meter</h3>
+          <p class="sadarin-tool-card__description" id="bumi-meter-description">
             Lihat perkiraan jejak karbon dari sampah yang kamu catat
             dan pahami dampaknya dalam bentuk yang lebih sederhana.
           </p>
         </div>
-        <div class="sadarin-tool-card__footer">
+        <div class="sadarin-tool-card__action">
           <span>Lihat dampaknya</span>
-          <span class="sadarin-tool-card__arrow">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M5 12h14M13 6l6 6-6 6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
+          <span class="sadarin-tool-card__action-arrow" aria-hidden="true">→</span>
         </div>
       </article>
-      <!-- 03 — SADARPOINT -->
-      <article class="sadarin-tool-card">
-        <div class="sadarin-tool-card__top">
-          <span class="sadarin-tool-card__index">
-            03
-          </span>
-          <div class="sadarin-tool-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48">
-              <path
-                d="M24 8l4.5 9.1 10 1.5-7.2 7 1.7 9.9-9-4.7-9 4.7 1.7-9.9-7.2-7 10-1.5L24 8Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
+      <article
+        class="sadarin-tool-card"
+        tabindex="0"
+        aria-labelledby="sadarpoint-title"
+        aria-describedby="sadarpoint-description"
+      >
+        <div class="sadarin-tool-card__visual">
+          <img
+            class="sadarin-tool-card__image sadarin-tool-card__image--meter"
+            src="assets/images/features/sadarpoint.png"
+            alt="Meter berwarna untuk menunjukkan progres SadarPoint"
+          >
         </div>
         <div class="sadarin-tool-card__body">
-          <span class="sadarin-tool-card__meta">
-            AKSI • PROGRES • POINT
-          </span>
-          <h3>SadarPoint</h3>
-          <p>
+          <h3 id="sadarpoint-title">SadarPoint</h3>
+          <p class="sadarin-tool-card__description" id="sadarpoint-description">
             Kumpulkan point dari aktivitas di SADARIN dan lihat
             perkembangan kebiasaan baikmu dari waktu ke waktu.
           </p>
         </div>
-        <div class="sadarin-tool-card__footer">
-          <span>Ikuti progresmu</span>
-          <span class="sadarin-tool-card__arrow">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M5 12h14M13 6l6 6-6 6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
+        <div class="sadarin-tool-card__action">
+          <span>Lihat progres</span>
+          <span class="sadarin-tool-card__action-arrow" aria-hidden="true">→</span>
         </div>
       </article>
-      <!-- 04 — SARAN HIJAU -->
-      <article class="sadarin-tool-card">
-        <div class="sadarin-tool-card__top">
-          <span class="sadarin-tool-card__index">
-            04
-          </span>
-          <div class="sadarin-tool-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48">
-              <path
-                d="M12 14.5h24v17H22l-7 6v-6h-3v-17Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M18 22h12M18 26h8"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
+      <article
+        class="sadarin-tool-card"
+        tabindex="0"
+        aria-labelledby="saran-hijau-title"
+        aria-describedby="saran-hijau-description"
+      >
+        <div class="sadarin-tool-card__visual">
+          <img
+            class="sadarin-tool-card__image sadarin-tool-card__image--person"
+            src="assets/images/features/saran-hijau.png"
+            alt="Seseorang menggunakan ponsel untuk menerima Saran Hijau"
+          >
         </div>
         <div class="sadarin-tool-card__body">
-          <span class="sadarin-tool-card__meta">
-            TANYA • TEMUKAN • LANJUTKAN
-          </span>
-          <h3>Saran Hijau</h3>
-          <p>
+          <h3 id="saran-hijau-title">Saran Hijau</h3>
+          <p class="sadarin-tool-card__description" id="saran-hijau-description">
             Bingung harus mulai dari mana? Temukan arahan sederhana
             atau terhubung dengan SADARIN untuk mendapatkan bantuan.
           </p>
         </div>
-        <div class="sadarin-tool-card__footer">
-          <span>Temukan arah berikutnya</span>
-          <span class="sadarin-tool-card__arrow">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M5 12h14M13 6l6 6-6 6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
+        <div class="sadarin-tool-card__action">
+          <span>Temukan arahan</span>
+          <span class="sadarin-tool-card__action-arrow" aria-hidden="true">→</span>
         </div>
       </article>
-    </div>
-    <!-- BOTTOM FLOW -->
-    <div class="sadarin-tools__flow">
-      <span>CATAT</span>
-      <span class="sadarin-tools__flow-line"></span>
-      <span>UKUR</span>
-      <span class="sadarin-tools__flow-line"></span>
-      <span>KUMPULKAN</span>
-      <span class="sadarin-tools__flow-line"></span>
-      <span>LANJUTKAN</span>
     </div>
   </div>
 </section>
@@ -662,11 +547,6 @@
   <div class="about-sadarin__container">
     <!-- SECTION META -->
     <div class="about-sadarin__meta">
-      <div class="about-sadarin__eyebrow">
-        <span>04</span>
-        <span class="about-sadarin__eyebrow-line"></span>
-        <span>TENTANG SADARIN</span>
-      </div>
       <span class="about-sadarin__meta-note">
         KENALI • PAHAMI • MULAI
       </span>
@@ -678,7 +558,8 @@
       <div class="about-sadarin__media">
         <div class="about-sadarin__media-shape" aria-hidden="true"></div>
         <figure class="about-sadarin__video">
-          <img src="assets/images/hero3.webp" alt="Aksi warga membersihkan sampah di ruang terbuka" loading="lazy">
+          <iframe src="https://www.youtube.com/embed/88eXGLIziRM" title="Video Edukasi Sadarin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+                </iframe>
         </figure>
         <div class="about-sadarin__video-info">
           <div>
