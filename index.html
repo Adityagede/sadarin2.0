@@ -647,7 +647,7 @@
 <section class="waste-guide" id="panduan-sampah">
   <div class="waste-guide__container">
     <!-- SECTION INTRO -->
-    <div class="waste-guide__head">
+    <header class="waste-guide__head">
       <div class="waste-guide__heading">
         <div class="waste-guide__eyebrow">
           <span>05</span>
@@ -660,116 +660,136 @@
       </div>
       <div class="waste-guide__intro">
         <p>
-          Setiap jenis sampah punya perjalanan yang berbeda.
-          Sebelum masuk ke tempat sampah, lihat bahannya,
-          periksa kondisinya, lalu pisahkan dengan tepat.
+          Setiap bahan punya perjalanan yang berbeda.
+          Kenali jenisnya sebelum menentukan ke mana ia pergi.
         </p>
-        <div class="waste-guide__principle">
-          <span class="waste-guide__principle-line"></span>
-          <p>
-            <strong>Lihat bahannya.</strong>
-            Cek kondisinya. Baru tentukan ke mana ia pergi.
-          </p>
-        </div>
       </div>
-    </div>
-    <!-- GUIDE DIRECTORY -->
-    <div class="waste-guide__list">
+    </header>
+    <!-- GUIDE CARDS -->
+    <div class="waste-guide__grid">
       <!-- ORGANIK -->
       <a
-        class="waste-guide__item waste-guide__item--organic"
+        class="waste-guide__card waste-guide__card--organic"
         id="organik"
         href="#organik"
         aria-label="Pelajari panduan sampah organik"
       >
-        <span class="waste-guide__number">
-          01
+        <img
+          class="waste-guide__image"
+          src="assets/images/organik-panduan.webp"
+          width="4000"
+          height="6000"
+          loading="lazy"
+          decoding="async"
+          alt="Sisa makanan dikumpulkan sebelum diolah sebagai sampah organik"
+        >
+        <span class="waste-guide__icon" aria-hidden="true">
+          <svg><use href="#icon-organic"></use></svg>
         </span>
-        <div class="waste-guide__item-main">
+        <div class="waste-guide__card-content">
           <h3>Organik</h3>
-          <p>
-            Sisa nasi, kulit buah, sayuran,
-            daun, dan ampas kopi.
-          </p>
+          <div class="waste-guide__summary">
+            <p>Bisa kembali ke tanah</p>
+            <span aria-hidden="true">↗</span>
+          </div>
+          <div class="waste-guide__detail">
+            <p>Sisa makanan, kulit buah, daun, dan ampas kopi dapat diolah dengan penanganan yang tepat.</p>
+            <span>Pelajari panduan <b aria-hidden="true">→</b></span>
+          </div>
         </div>
-        <span class="waste-guide__outcome">
-          Bisa kembali ke tanah
-        </span>
-        <span class="waste-guide__arrow" aria-hidden="true">
-          ↗
-        </span>
       </a>
       <!-- PLASTIK -->
       <a
-        class="waste-guide__item waste-guide__item--plastic"
+        class="waste-guide__card waste-guide__card--plastic"
         id="plastik"
         href="#plastik"
         aria-label="Pelajari panduan sampah plastik"
       >
-        <span class="waste-guide__number">
-          02
+        <img
+          class="waste-guide__image"
+          src="assets/images/plastik-panduan.webp"
+          width="2624"
+          height="3936"
+          loading="lazy"
+          decoding="async"
+          alt="Pekerja mengumpulkan botol dan kemasan plastik untuk dipilah"
+        >
+        <span class="waste-guide__icon" aria-hidden="true">
+          <svg><use href="#icon-plastic"></use></svg>
         </span>
-        <div class="waste-guide__item-main">
+        <div class="waste-guide__card-content">
           <h3>Plastik</h3>
-          <p>
-            Botol, gelas, wadah makanan,
-            kemasan, dan plastik rumah tangga.
-          </p>
+          <div class="waste-guide__summary">
+            <p>Bersihkan &amp; pisahkan</p>
+            <span aria-hidden="true">↗</span>
+          </div>
+          <div class="waste-guide__detail">
+            <p>Botol, gelas, wadah makanan, dan kemasan perlu dibersihkan lalu dipisahkan sesuai bahannya.</p>
+            <span>Pelajari panduan <b aria-hidden="true">→</b></span>
+          </div>
         </div>
-        <span class="waste-guide__outcome">
-          Bersihkan &amp; pilah
-        </span>
-        <span class="waste-guide__arrow" aria-hidden="true">
-          ↗
-        </span>
       </a>
       <!-- KERTAS -->
       <a
-        class="waste-guide__item waste-guide__item--paper"
+        class="waste-guide__card waste-guide__card--paper"
         id="kertas"
         href="#kertas"
         aria-label="Pelajari panduan sampah kertas"
       >
-        <span class="waste-guide__number">
-          03
+        <img
+          class="waste-guide__image"
+          src="assets/images/kertas-panduan.webp"
+          width="6240"
+          height="4160"
+          loading="lazy"
+          decoding="async"
+          alt="Tangan memegang kantong kertas di dekat wadah bertanda paper"
+        >
+        <span class="waste-guide__icon" aria-hidden="true">
+          <svg><use href="#icon-paper"></use></svg>
         </span>
-        <div class="waste-guide__item-main">
+        <div class="waste-guide__card-content">
           <h3>Kertas</h3>
-          <p>
-            Kardus, koran, kertas tulis,
-            dan kemasan berbahan dasar kertas.
-          </p>
+          <div class="waste-guide__summary">
+            <p>Jaga tetap kering</p>
+            <span aria-hidden="true">↗</span>
+          </div>
+          <div class="waste-guide__detail">
+            <p>Kardus, koran, kertas tulis, dan kemasan kertas lebih mudah dipilah saat bersih dan kering.</p>
+            <span>Pelajari panduan <b aria-hidden="true">→</b></span>
+          </div>
         </div>
-        <span class="waste-guide__outcome">
-          Jaga tetap kering
-        </span>
-        <span class="waste-guide__arrow" aria-hidden="true">
-          ↗
-        </span>
       </a>
       <!-- RESIDU -->
       <a
-        class="waste-guide__item waste-guide__item--residue"
+        class="waste-guide__card waste-guide__card--residue"
         id="residu"
         href="#residu"
         aria-label="Pelajari panduan sampah residu"
       >
-        <span class="waste-guide__number">
-          04
+        <img
+          class="waste-guide__image"
+          src="assets/images/residu-panduan.webp"
+          width="5038"
+          height="3358"
+          loading="lazy"
+          decoding="async"
+          alt="Kumpulan puntung rokok sebagai contoh sampah residu"
+        >
+        <span class="waste-guide__icon" aria-hidden="true">
+          <svg><use href="#icon-residue"></use></svg>
         </span>
-        <div class="waste-guide__item-main">
+        <div class="waste-guide__card-content">
           <h3>Residu</h3>
-          <p>
-            Tisu kotor, popok, kemasan multilayer,
-            dan material yang sulit diproses kembali.
-          </p>
+          <div class="waste-guide__summary">
+            <p>Pilihan terakhir</p>
+            <span aria-hidden="true">↗</span>
+          </div>
+          <div class="waste-guide__detail">
+            <p>Tisu sangat kotor, popok, kemasan multilayer, dan puntung rokok termasuk material yang sulit diproses.</p>
+            <span>Pelajari panduan <b aria-hidden="true">→</b></span>
+          </div>
         </div>
-        <span class="waste-guide__outcome">
-          Pilihan terakhir
-        </span>
-        <span class="waste-guide__arrow" aria-hidden="true">
-          ↗
-        </span>
       </a>
     </div>
     <!-- SECTION FOOT -->
@@ -781,11 +801,238 @@
         href="#panduan-sampah"
         class="waste-guide__all"
       >
-        <span>Buka panduan lengkap</span>
+        <span>Lihat semua panduan</span>
         <span aria-hidden="true">
           →
         </span>
       </a>
+    </div>
+  </div>
+</section>
+<section class="forum-preview" id="forum-sadarin" aria-labelledby="forum-title">
+  <div class="forum-preview__container">
+    <header class="forum-preview__head">
+      <div class="forum-preview__heading">
+        <div class="forum-preview__eyebrow">
+          <span>Forum SADARIN</span>
+        </div>
+        <h2 id="forum-title">
+          Cerita yang membuat kita<br>
+          <span>melihat sampah lebih dekat.</span>
+        </h2>
+      </div>
+      <div class="forum-preview__intro">
+        <p>
+          Perspektif, kebiasaan, dan cerita di balik sampah yang kita hasilkan setiap hari.
+        </p>
+        <div class="forum-preview__controls" aria-label="Navigasi artikel Forum SADARIN">
+          <button class="forum-preview__arrow forum-prev" type="button" aria-label="Artikel sebelumnya">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 12H5M11 6l-6 6 6 6"></path>
+            </svg>
+          </button>
+          <button class="forum-preview__arrow forum-next" type="button" aria-label="Artikel berikutnya">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="swiper forum-swiper">
+      <div class="swiper-wrapper">
+        <article class="swiper-slide forum-article">
+          <a class="forum-article__link" href="forum.html" target="_blank" rel="noopener noreferrer">
+            <figure class="forum-article__media">
+              <img src="assets/images/hero1.webp" width="2624" height="3936" loading="lazy" decoding="async" alt="Petugas mengangkut sampah dari wadah pengumpulan">
+            </figure>
+            <div class="forum-article__meta">
+              <span>01</span>
+              <span>Edukasi</span>
+            </div>
+            <h3>Kenapa Sampah yang Sudah Dipilah Bisa Tercampur Lagi?</h3>
+            <p>Pemilahan di rumah adalah awal. Pengangkutan, kontaminasi, dan keterbatasan fasilitas ikut menentukan perjalanan sampah berikutnya.</p>
+            <span class="forum-article__cta">Baca cerita <b aria-hidden="true">→</b></span>
+          </a>
+        </article>
+
+        <article class="swiper-slide forum-article">
+          <a class="forum-article__link" href="forum.html" target="_blank" rel="noopener noreferrer">
+            <figure class="forum-article__media">
+              <img src="assets/images/residu-panduan.webp" width="5038" height="3358" loading="lazy" decoding="async" alt="Puntung rokok yang terkumpul sebagai sampah berukuran kecil">
+            </figure>
+            <div class="forum-article__meta">
+              <span>02</span>
+              <span>Kebiasaan</span>
+            </div>
+            <h3>Sampah Kecil yang Sering Kita Anggap Tidak Masalah</h3>
+            <p>Struk, tisu, sachet, dan puntung rokok terlihat sepele, tetapi cara membuangnya dapat memengaruhi material lain di sekitarnya.</p>
+            <span class="forum-article__cta">Baca cerita <b aria-hidden="true">→</b></span>
+          </a>
+        </article>
+
+        <article class="swiper-slide forum-article">
+          <a class="forum-article__link" href="forum.html" target="_blank" rel="noopener noreferrer">
+            <figure class="forum-article__media">
+              <img src="assets/images/hero2.webp" width="4000" height="6000" loading="lazy" decoding="async" alt="Tiga tempat sampah berwarna untuk pemilahan material">
+            </figure>
+            <div class="forum-article__meta">
+              <span>03</span>
+              <span>Perspektif</span>
+            </div>
+            <h3>Memilah Sampah Bukan Berarti Semuanya Bisa Didaur Ulang</h3>
+            <p>Jenis material, kebersihan, kondisi, dan fasilitas pengolahan ikut menentukan apakah suatu sampah dapat diproses kembali.</p>
+            <span class="forum-article__cta">Baca cerita <b aria-hidden="true">→</b></span>
+          </a>
+        </article>
+
+        <article class="swiper-slide forum-article">
+          <a class="forum-article__link" href="forum.html" target="_blank" rel="noopener noreferrer">
+            <figure class="forum-article__media">
+              <img src="assets/images/plastik-panduan.webp" width="2624" height="3936" loading="lazy" decoding="async" alt="Pekerja mengumpulkan botol plastik untuk dipilah">
+            </figure>
+            <div class="forum-article__meta">
+              <span>04</span>
+              <span>Plastik</span>
+            </div>
+            <h3>Ke Mana Botol Plastik Pergi Setelah Kita Pisahkan?</h3>
+            <p>Setelah dipisahkan, plastik masih perlu dikumpulkan, disortir, dibersihkan, dan diarahkan ke alur pengolahan yang sesuai.</p>
+            <span class="forum-article__cta">Baca cerita <b aria-hidden="true">→</b></span>
+          </a>
+        </article>
+
+        <article class="swiper-slide forum-article">
+          <a class="forum-article__link" href="forum.html" target="_blank" rel="noopener noreferrer">
+            <figure class="forum-article__media forum-article__media--detail">
+              <img src="assets/images/residu-panduan.webp" width="5038" height="3358" loading="lazy" decoding="async" alt="Puntung rokok yang telah dipisahkan sebagai sampah residu">
+            </figure>
+            <div class="forum-article__meta">
+              <span>05</span>
+              <span>Residu</span>
+            </div>
+            <h3>Mengapa Residu Tetap Perlu Dipisahkan?</h3>
+            <p>Residu yang bercampur dengan material lain dapat membuat proses pemilahan semakin sulit dan menurunkan kualitas material yang masih dapat diproses.</p>
+            <span class="forum-article__cta">Baca cerita <b aria-hidden="true">→</b></span>
+          </a>
+        </article>
+
+        <article class="swiper-slide forum-article">
+          <a class="forum-article__link" href="forum.html" target="_blank" rel="noopener noreferrer">
+            <figure class="forum-article__media">
+              <img src="assets/images/kertas-panduan.webp" width="6240" height="4160" loading="lazy" decoding="async" alt="Kertas dipisahkan sebelum dimasukkan ke wadah khusus">
+            </figure>
+            <div class="forum-article__meta">
+              <span>06</span>
+              <span>Aksi</span>
+            </div>
+            <h3>Sebelum Dibuang: Kebiasaan Kecil yang Membantu Proses Pemilahan</h3>
+            <p>Mengosongkan isi, menjaga kertas tetap kering, dan memisahkan material adalah langkah sederhana sebelum sampah berpindah dari rumah.</p>
+            <span class="forum-article__cta">Baca cerita <b aria-hidden="true">→</b></span>
+          </a>
+        </article>
+      </div>
+    </div>
+
+    <div class="forum-preview__footer">
+      <span>Masih banyak perjalanan material yang bisa ditelusuri.</span>
+      <a href="forum.html" target="_blank" rel="noopener noreferrer">
+        <span>Lihat semua cerita</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="faq__container">
+    <header class="faq__head">
+      <div class="faq__heading">
+        <div class="faq__eyebrow">
+          <span>FAQ</span>
+        </div>
+        <h2 id="faq-title">Pertanyaan yang<br><span>sering muncul.</span></h2>
+      </div>
+      <p>
+        Jawaban singkat untuk membantu kamu memahami cara menggunakan SADARIN dan memilah sampah dengan lebih tepat.
+      </p>
+    </header>
+
+    <div class="faq__list">
+      <article class="faq-item is-open">
+        <h3>
+          <button class="faq-item__button" type="button" aria-expanded="true" aria-controls="faq-answer-01" id="faq-question-01">
+            <span class="faq-item__number">01</span>
+            <span class="faq-item__question">Apa yang bisa saya lakukan di SADARIN?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+            </span>
+          </button>
+        </h3>
+        <div class="faq-item__answer" id="faq-answer-01" role="region" aria-labelledby="faq-question-01" aria-hidden="false">
+          <div><p>SADARIN membantu kamu mengenali jenis sampah, membuka panduan pemilahan, menggunakan fitur aksi yang tersedia, dan memahami isu sampah melalui Forum SADARIN. Setiap bagian dirancang agar langkah kecil sehari-hari lebih mudah dipahami dan dilakukan.</p></div>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3>
+          <button class="faq-item__button" type="button" aria-expanded="false" aria-controls="faq-answer-02" id="faq-question-02">
+            <span class="faq-item__number">02</span>
+            <span class="faq-item__question">Bagaimana cara menentukan kategori sampah sebelum dibuang?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+            </span>
+          </button>
+        </h3>
+        <div class="faq-item__answer" id="faq-answer-02" role="region" aria-labelledby="faq-question-02" aria-hidden="true">
+          <div><p>Mulai dari bahan utamanya, lalu periksa apakah sampah masih tercampur, basah, atau kotor. Setelah itu cocokkan dengan kategori Organik, Plastik, Kertas, atau Residu melalui Panduan Sampah untuk melihat contoh dan penanganan yang sesuai.</p></div>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3>
+          <button class="faq-item__button" type="button" aria-expanded="false" aria-controls="faq-answer-03" id="faq-question-03">
+            <span class="faq-item__number">03</span>
+            <span class="faq-item__question">Apakah sampah yang sudah dipilah pasti bisa didaur ulang?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+            </span>
+          </button>
+        </h3>
+        <div class="faq-item__answer" id="faq-answer-03" role="region" aria-labelledby="faq-question-03" aria-hidden="true">
+          <div><p>Tidak selalu. Kemungkinan suatu material dapat diproses kembali dipengaruhi oleh jenis bahan, kondisi, tingkat kontaminasi, serta fasilitas pengolahan yang tersedia. Memilah tetap penting karena membantu material mengikuti alur penanganan yang lebih sesuai.</p></div>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3>
+          <button class="faq-item__button" type="button" aria-expanded="false" aria-controls="faq-answer-04" id="faq-question-04">
+            <span class="faq-item__number">04</span>
+            <span class="faq-item__question">Mengapa plastik dan kertas perlu diperiksa kondisinya sebelum dipilah?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+            </span>
+          </button>
+        </h3>
+        <div class="faq-item__answer" id="faq-answer-04" role="region" aria-labelledby="faq-question-04" aria-hidden="true">
+          <div><p>Sisa makanan, cairan, atau kelembapan dapat mencemari material lain dan menyulitkan proses pemilahan. Mengosongkan wadah serta menjaga kertas tetap bersih dan kering membantu mempertahankan kondisi material sebelum masuk ke tahap berikutnya.</p></div>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3>
+          <button class="faq-item__button" type="button" aria-expanded="false" aria-controls="faq-answer-05" id="faq-question-05">
+            <span class="faq-item__number">05</span>
+            <span class="faq-item__question">Apa bedanya Panduan Sampah dan Forum SADARIN?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+            </span>
+          </button>
+        </h3>
+        <div class="faq-item__answer" id="faq-answer-05" role="region" aria-labelledby="faq-question-05" aria-hidden="true">
+          <div><p>Panduan Sampah membantu mengenali jenis material dan langkah awal penanganannya. Forum SADARIN membahas konteks yang lebih luas—mengapa suatu masalah terjadi, bagaimana kebiasaan kita berpengaruh, dan apa yang dapat dipelajari dari perjalanan sampah setelah dibuang.</p></div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
