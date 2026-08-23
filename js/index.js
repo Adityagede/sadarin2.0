@@ -324,6 +324,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* =========================================================
+     FINAL ACTION REVEAL
+  ========================================================= */
+  const finalAction = document.querySelector('[data-final-action]');
+
+  if (finalAction && !reducedMotion.matches && 'IntersectionObserver' in window) {
+    finalAction.classList.add('is-motion-ready');
+
+    const finalActionObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, {
+      threshold: .18,
+      rootMargin: '0px 0px -24px 0px'
+    });
+
+    finalActionObserver.observe(finalAction);
+  } else {
+    finalAction?.classList.add('is-visible');
+  }
+
+  /* =========================================================
      SECTION REVEALS
   ========================================================= */
   const revealItems = document.querySelectorAll('.waste-reality [data-reveal]');
