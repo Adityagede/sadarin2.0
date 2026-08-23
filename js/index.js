@@ -245,6 +245,85 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* =========================================================
+     FORUM SADARIN SLIDER
+  ========================================================= */
+  const forumSlider = document.querySelector('.forum-swiper');
+
+  if (forumSlider && typeof Swiper !== 'undefined') {
+    const forumPrev = document.querySelector('.forum-prev');
+    const forumNext = document.querySelector('.forum-next');
+
+    new Swiper(forumSlider, {
+      slidesPerView: 1.11,
+      spaceBetween: 16,
+      speed: reducedMotion.matches ? 0 : 520,
+      loop: false,
+      grabCursor: true,
+      watchOverflow: true,
+      navigation: {
+        prevEl: forumPrev,
+        nextEl: forumNext
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true
+      },
+      a11y: {
+        enabled: true,
+        prevSlideMessage: 'Tampilkan artikel sebelumnya',
+        nextSlideMessage: 'Tampilkan artikel berikutnya'
+      },
+      breakpoints: {
+        430: {
+          slidesPerView: 1.14,
+          spaceBetween: 18
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 26
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      }
+    });
+  }
+
+  /* =========================================================
+     FAQ ACCORDION
+  ========================================================= */
+  const faqSection = document.querySelector('.faq');
+
+  if (faqSection) {
+    const faqItems = [...faqSection.querySelectorAll('.faq-item')];
+
+    function setFaqItem(item, open) {
+      const button = item.querySelector('.faq-item__button');
+      const answer = item.querySelector('.faq-item__answer');
+
+      item.classList.toggle('is-open', open);
+      button?.setAttribute('aria-expanded', String(open));
+      answer?.setAttribute('aria-hidden', String(!open));
+    }
+
+    faqItems.forEach((item) => {
+      const button = item.querySelector('.faq-item__button');
+      setFaqItem(item, item.classList.contains('is-open'));
+
+      button?.addEventListener('click', () => {
+        const shouldOpen = !item.classList.contains('is-open');
+        faqItems.forEach((faqItem) => setFaqItem(faqItem, false));
+        if (shouldOpen) setFaqItem(item, true);
+      });
+    });
+  }
+
+  /* =========================================================
      SECTION REVEALS
   ========================================================= */
   const revealItems = document.querySelectorAll('.waste-reality [data-reveal]');
