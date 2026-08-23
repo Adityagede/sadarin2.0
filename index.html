@@ -102,6 +102,7 @@
       <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileNav">
         <span></span>
         <span></span>
+        <span></span>
       </button>
     </div>
     <!-- =====================================================
@@ -112,7 +113,7 @@
       <div class="mobile-nav-panel" tabindex="-1">
         <div class="mobile-nav-meta">
           <span>Menu</span>
-          <span>SADARIN / 2026</span>
+          <span>Pilih tujuan</span>
         </div>
         <div class="mobile-nav-links">
           <a href="index.html" class="active" aria-current="page">
@@ -163,6 +164,10 @@
           <span>Catat aksi</span>
           <span aria-hidden="true">↗</span>
         </a>
+        <div class="mobile-nav-footer" aria-hidden="true">
+          <span>Pilah · Pahami · Bertindak</span>
+          <span>SADARIN / 2026</span>
+        </div>
       </div>
     </nav>
   </header>
@@ -650,7 +655,6 @@
     <header class="waste-guide__head">
       <div class="waste-guide__heading">
         <div class="waste-guide__eyebrow">
-          <span>05</span>
           <span>Panduan Sampah</span>
         </div>
         <h2>
@@ -792,21 +796,6 @@
         </div>
       </a>
     </div>
-    <!-- SECTION FOOT -->
-    <div class="waste-guide__footer">
-      <p>
-        Masih ragu sampahmu masuk kategori yang mana?
-      </p>
-      <a
-        href="#panduan-sampah"
-        class="waste-guide__all"
-      >
-        <span>Lihat semua panduan</span>
-        <span aria-hidden="true">
-          →
-        </span>
-      </a>
-    </div>
   </div>
 </section>
 <section class="forum-preview" id="forum-sadarin" aria-labelledby="forum-title">
@@ -814,7 +803,7 @@
     <header class="forum-preview__head">
       <div class="forum-preview__heading">
         <div class="forum-preview__eyebrow">
-          <span>Forum SADARIN</span>
+          <span>Forum S ADARIN</span>
         </div>
         <h2 id="forum-title">
           Cerita yang membuat kita<br>
@@ -1036,31 +1025,86 @@
     </div>
   </div>
 </section>
+
+<section class="final-action" aria-labelledby="final-action-title" data-final-action>
+  <img class="final-action__image" src="assets/images/info-image.webp" alt="Pemandangan udara taman hijau dengan jam besar di antara pepohonan" loading="lazy">
+  <div class="final-action__overlay" aria-hidden="true"></div>
+  <div class="final-action__container">
+    <div class="final-action__copy">
+      <h2 id="final-action-title" data-final-reveal>Mulai dari yang<br>ada di tanganmu.</h2>
+      <p data-final-reveal>Tidak harus mengubah semuanya sekaligus. Kenali satu sampah, pilih langkah yang tepat, lalu jadikan kebiasaan kecil itu bagian dari harimu.</p>
+    </div>
+    <div class="final-action__actions" data-final-reveal>
+      <a href="#fitur-sadarin" class="final-action__button final-action__button--primary">
+        <span>Catat aksi hari ini</span>
+        <span aria-hidden="true">→</span>
+      </a>
+      <a href="#panduan-sampah" class="final-action__button final-action__button--secondary">
+        <span>Kenali sampahmu</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
   </main>
   <!-- =====================================================
        FOOTER
   ====================================================== -->
   <footer class="site-footer">
     <div class="site-footer__container">
-      <div class="site-footer__top">
+      <div class="site-footer__message">
+        <div>
+          <span class="site-footer__label">Setelah halaman ini</span>
+          <h2>Tetap sadar setelah halaman ini berakhir.</h2>
+        </div>
+        <div class="site-footer__message-copy">
+          <p>Bawa panduan dan cerita SADARIN ke kebiasaan sehari-hari—mulai dari satu sampah yang kamu kenali hari ini.</p>
+          <a href="#fitur-sadarin">
+            <span>Catat aksi</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="site-footer__grid">
         <div class="site-footer__brand">
           <img src="assets/logo/logo-sadarin.svg" alt="SADARIN">
-          <p>Ruang untuk memahami perjalanan sampah dan memulai kebiasaan yang lebih bertanggung jawab.</p>
+          <p>SADARIN membantu mengenali sampah, memahami perjalanannya, dan mengubah pengetahuan menjadi kebiasaan yang lebih sadar.</p>
         </div>
-        <nav class="site-footer__nav" aria-label="Navigasi footer">
+
+        <nav class="site-footer__column" aria-label="Jelajahi SADARIN">
+          <span class="site-footer__label">Jelajahi</span>
           <a href="index.html">Beranda</a>
-          <a href="#panduan-sampah">Panduan</a>
           <a href="forum.html">Forum</a>
           <a href="#tentang-sadarin">Tentang</a>
         </nav>
+
+        <nav class="site-footer__column" aria-label="Panduan Sampah">
+          <span class="site-footer__label">Panduan</span>
+          <a href="#organik">Organik</a>
+          <a href="#plastik">Plastik</a>
+          <a href="#kertas">Kertas</a>
+          <a href="#residu">Residu</a>
+        </nav>
+
+        <div class="site-footer__context">
+          <span class="site-footer__label">Konteks Global</span>
+          <p>Masalah sampah tidak berhenti di satu tempat.</p>
+          <a href="https://www.theworldcounts.com/" target="_blank" rel="noopener noreferrer">
+            <span>Sumber: The World Counts</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
+
       <div class="site-footer__bottom">
+        <span>RPL SMKN 1 GIANYAR / 2026</span>
         <span>© 2026 SADARIN</span>
-        <span>Kenali. Pilah. Kurangi.</span>
       </div>
     </div>
   </footer>
   <script src="lib/swiper/swiper-bundle.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/index.js?v=20260823"></script>
 </body>
 </html>
