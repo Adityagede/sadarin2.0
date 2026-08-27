@@ -1,11 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Forum SADARIN menghadirkan cerita, perspektif, dan pengetahuan tentang sampah, lingkungan, serta kebiasaan sehari-hari.">
+  <title>Forum SADARIN — Cerita dari Keseharian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260826">
+  <link rel="stylesheet" href="css/forum.css?v=20260826">
+  <link rel="icon" href="assets/logo/logo-sadarin.svg">
 </head>
-<body>
-    
+<body class="forum-page">
+  <a class="forum-skip-link" href="#forum-content">Lewati ke isi Forum</a>
+
+  <header class="site-header" id="siteHeader">
+    <svg class="nav-icon-sprite" aria-hidden="true">
+      <symbol id="icon-organic" viewBox="0 0 24 24">
+        <path d="M19.5 4.5C13 4.8 7.8 7.1 5.7 11.1c-1.7 3.2-.6 6.8 2.4 7.8 3.2 1.1 6.1-.8 7.1-4.1.8-2.7 1.9-5.7 4.3-10.3Z"/>
+        <path d="M4.8 20c2.7-4.8 5.8-7.8 10.2-9.7"/>
+      </symbol>
+      <symbol id="icon-plastic" viewBox="0 0 24 24">
+        <path d="M9.5 3h5M10 3v3.8L8 9.5v9A2.5 2.5 0 0 0 10.5 21h3a2.5 2.5 0 0 0 2.5-2.5v-9l-2-2.7V3"/>
+        <path d="M8 12h8M8 17h8"/>
+      </symbol>
+      <symbol id="icon-paper" viewBox="0 0 24 24">
+        <path d="M6 3.5h8l4 4V21H6Z"/>
+        <path d="M14 3.5V8h4M9 12h6M9 15.5h6"/>
+      </symbol>
+      <symbol id="icon-residue" viewBox="0 0 24 24">
+        <path d="M9.5 5.5 8 3h8l-1.5 2.5M8.7 8h6.6c2.2 2.8 3.2 5.6 3.2 8.3 0 3.1-2.2 4.7-6.5 4.7s-6.5-1.6-6.5-4.7C5.5 13.6 6.5 10.8 8.7 8Z"/>
+        <path d="M8.2 8h7.6"/>
+      </symbol>
+    </svg>
+
+    <div class="nav-container">
+      <a href="index.html" class="site-logo" aria-label="SADARIN — Beranda">
+        <img src="assets/logo/logo-sadarin.svg" alt="SADARIN">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <div class="nav-guide-desktop" data-guide-desktop>
+          <button class="nav-guide-trigger" type="button" aria-expanded="false" aria-controls="guideMega">
+            <span>Panduan Sampah</span>
+            <svg class="nav-guide-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="m7 9.5 5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="guide-mega" id="guideMega" aria-hidden="true">
+            <div class="guide-mega-inner">
+              <ul class="guide-mega-categories">
+                <li>
+                  <a href="index.html#organik" class="guide-mega-item guide-organic">
+                    <span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-organic"></use></svg></span>
+                    <span class="guide-mega-copy"><strong>Organik</strong></span>
+                    <span class="guide-mega-arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#plastik" class="guide-mega-item guide-plastic">
+                    <span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-plastic"></use></svg></span>
+                    <span class="guide-mega-copy"><strong>Plastik</strong></span>
+                    <span class="guide-mega-arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#kertas" class="guide-mega-item guide-paper">
+                    <span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-paper"></use></svg></span>
+                    <span class="guide-mega-copy"><strong>Kertas</strong></span>
+                    <span class="guide-mega-arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#residu" class="guide-mega-item guide-residue">
+                    <span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-residue"></use></svg></span>
+                    <span class="guide-mega-copy"><strong>Residu</strong></span>
+                    <span class="guide-mega-arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="forum.html" class="active" aria-current="page">Forum</a>
+        <a href="tentang.html">Tentang</a>
+      </nav>
+
+      <a href="index.html#fitur-sadarin" class="nav-action">
+        <span>Catat Aksi</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi mobile" aria-hidden="true">
+      <button class="mobile-nav-backdrop" type="button" aria-label="Tutup menu"></button>
+      <div class="mobile-nav-panel" tabindex="-1">
+        <div class="mobile-nav-meta"><span>Menu</span><span>Pilih tujuan</span></div>
+        <div class="mobile-nav-links">
+          <a href="index.html"><small>01</small><span>Beranda</span></a>
+          <div class="mobile-guide">
+            <button class="mobile-guide-trigger" type="button" aria-expanded="false" aria-controls="mobileGuidePanel">
+              <small>02</small>
+              <span>Panduan Sampah</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m7 9.5 5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="mobile-guide-panel" id="mobileGuidePanel" aria-hidden="true">
+              <a href="index.html#organik">
+                <span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-organic"></use></svg></span>
+                <span class="mobile-guide-name">Organik<small>Kembali ke tanah</small></span><span aria-hidden="true">→</span>
+              </a>
+              <a href="index.html#plastik">
+                <span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-plastic"></use></svg></span>
+                <span class="mobile-guide-name">Plastik<small>Bersihkan sebelum dipilah</small></span><span aria-hidden="true">→</span>
+              </a>
+              <a href="index.html#kertas">
+                <span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-paper"></use></svg></span>
+                <span class="mobile-guide-name">Kertas<small>Jaga tetap kering</small></span><span aria-hidden="true">→</span>
+              </a>
+              <a href="index.html#residu">
+                <span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-residue"></use></svg></span>
+                <span class="mobile-guide-name">Residu<small>Pilihan pembuangan terakhir</small></span><span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+          <a href="forum.html" class="active" aria-current="page"><small>03</small><span>Forum</span></a>
+          <a href="tentang.html"><small>04</small><span>Tentang</span></a>
+        </div>
+        <a href="index.html#fitur-sadarin" class="mobile-nav-action"><span>Catat aksi</span><span aria-hidden="true">↗</span></a>
+        <div class="mobile-nav-footer" aria-hidden="true"><span>Pilah · Pahami · Bertindak</span><span>SADARIN / 2026</span></div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="forum-content">
+    <section class="forum-hero" aria-labelledby="forum-page-title">
+      <img class="forum-hero__image" src="assets/images/forum-hero.webp" width="3456" height="5184" alt="Warga mengumpulkan sampah bersama di ruang terbuka" fetchpriority="high">
+      <div class="forum-hero__overlay" aria-hidden="true"></div>
+      <div class="forum-hero__container">
+        <nav class="forum-breadcrumb" aria-label="Breadcrumb">
+          <ol><li><a href="index.html">Beranda</a></li><li aria-current="page">Forum</li></ol>
+        </nav>
+        <div class="forum-hero__title-panel">
+          <span>Forum SADARIN</span>
+          <h1 id="forum-page-title">Cerita dari SADARIN</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="forum-stories" aria-labelledby="forum-stories-title">
+      <div class="forum-stories__container">
+        <header class="forum-stories__head">
+          <span>Ruang baca lingkungan</span>
+          <h2 id="forum-stories-title">Cerita yang membuat kita melihat sampah lebih dekat.</h2>
+          <p>Perspektif, kebiasaan, dan perjalanan material yang hadir di sekitar kita setiap hari.</p>
+        </header>
+
+        <div class="forum-stories__grid">
+          <article class="forum-article">
+            <a class="forum-article__link" href="cerita.html?artikel=jejak-pemilahan">
+              <figure class="forum-article__media"><img src="assets/images/cerita1.webp" width="6000" height="4000" loading="lazy" decoding="async" alt="Bal-bal botol plastik yang telah dipadatkan"></figure>
+              <div class="forum-article__meta"><span>01</span><span>Edukasi</span></div>
+              <h3>Kenapa Sampah yang Sudah Dipilah Bisa Tercampur Lagi?</h3>
+              <span class="forum-article__author">Oleh: Tim SADARIN</span>
+              <p>Pemilahan di rumah adalah awal. Pengangkutan, kontaminasi, dan keterbatasan fasilitas ikut menentukan perjalanan sampah berikutnya.</p>
+              <span class="forum-article__cta">Baca selengkapnya <b aria-hidden="true">→</b></span>
+            </a>
+          </article>
+
+          <article class="forum-article">
+            <a class="forum-article__link" href="cerita.html?artikel=kebiasaan-kecil">
+              <figure class="forum-article__media"><img src="assets/images/cerita2.webp" width="5472" height="3648" loading="lazy" decoding="async" alt="Sisa tisu dan sampah kecil di permukaan gelap"></figure>
+              <div class="forum-article__meta"><span>02</span><span>Kebiasaan</span></div>
+              <h3>Sampah Kecil yang Sering Kita Anggap Tidak Masalah</h3>
+              <span class="forum-article__author">Oleh: Tim SADARIN</span>
+              <p>Struk, tisu, sachet, dan puntung rokok terlihat sepele, tetapi dapat memengaruhi material lain ketika dibuang bersama.</p>
+              <span class="forum-article__cta">Baca selengkapnya <b aria-hidden="true">→</b></span>
+            </a>
+          </article>
+
+          <article class="forum-article">
+            <a class="forum-article__link" href="cerita.html?artikel=perspektif-daur-ulang">
+              <figure class="forum-article__media"><img src="assets/images/cerita3.webp" width="4000" height="6000" loading="lazy" decoding="async" alt="Tiga tempat sampah berwarna untuk pemilahan material"></figure>
+              <div class="forum-article__meta"><span>03</span><span>Perspektif</span></div>
+              <h3>Memilah Sampah Bukan Berarti Semuanya Bisa Didaur Ulang</h3>
+              <span class="forum-article__author">Oleh: Tim SADARIN</span>
+              <p>Jenis material, kebersihan, kondisi, dan fasilitas pengolahan ikut menentukan apakah suatu sampah dapat diproses kembali.</p>
+              <span class="forum-article__cta">Baca selengkapnya <b aria-hidden="true">→</b></span>
+            </a>
+          </article>
+
+          <article class="forum-article">
+            <a class="forum-article__link" href="cerita.html?artikel=perjalanan-plastik">
+              <figure class="forum-article__media"><img src="assets/images/cerita4.webp" width="2624" height="3936" loading="lazy" decoding="async" alt="Pekerja mengumpulkan botol plastik ke dalam karung besar"></figure>
+              <div class="forum-article__meta"><span>04</span><span>Plastik</span></div>
+              <h3>Ke Mana Botol Plastik Pergi Setelah Kita Pisahkan?</h3>
+              <span class="forum-article__author">Oleh: Tim SADARIN</span>
+              <p>Setelah dipisahkan, plastik masih perlu dikumpulkan, disortir, dibersihkan, dan diarahkan ke alur yang sesuai.</p>
+              <span class="forum-article__cta">Baca selengkapnya <b aria-hidden="true">→</b></span>
+            </a>
+          </article>
+
+          <article class="forum-article">
+            <a class="forum-article__link" href="cerita.html?artikel=sisa-organik">
+              <figure class="forum-article__media"><img src="assets/images/cerita5.webp" width="4000" height="6000" loading="lazy" decoding="async" alt="Sisa makanan dipisahkan untuk pengolahan organik"></figure>
+              <div class="forum-article__meta"><span>05</span><span>Organik</span></div>
+              <h3>Mengapa Sisa Makanan Perlu Dipisahkan Sejak dari Dapur?</h3>
+              <span class="forum-article__author">Oleh: Tim SADARIN</span>
+              <p>Pemisahan sejak awal menjaga material lain tetap bersih dan membuka kemungkinan pengolahan organik yang lebih tepat.</p>
+              <span class="forum-article__cta">Baca selengkapnya <b aria-hidden="true">→</b></span>
+            </a>
+          </article>
+
+          <article class="forum-article">
+            <a class="forum-article__link" href="cerita.html?artikel=kertas-kering">
+              <figure class="forum-article__media"><img src="assets/images/cerita6.webp" width="6240" height="4160" loading="lazy" decoding="async" alt="Kertas dipisahkan sebelum dimasukkan ke wadah khusus"></figure>
+              <div class="forum-article__meta"><span>06</span><span>Aksi</span></div>
+              <h3>Sebelum Dibuang: Kebiasaan Kecil yang Membantu Pemilahan</h3>
+              <span class="forum-article__author">Oleh: Tim SADARIN</span>
+              <p>Mengosongkan isi, menjaga kertas tetap kering, dan memisahkan material adalah langkah sederhana yang memberi perbedaan.</p>
+              <span class="forum-article__cta">Baca selengkapnya <b aria-hidden="true">→</b></span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <aside class="forum-note" aria-label="Catatan SADARIN">
+      <div class="forum-note__container">
+        <span>Catatan SADARIN</span>
+        <p>Yang kita buang tidak langsung menghilang. Memahami perjalanannya membantu kita memilih dengan lebih sadar sejak awal.</p>
+        <small>Pilah · Pahami · Bertindak</small>
+      </div>
+    </aside>
+
+    <section class="forum-closing" aria-labelledby="forum-closing-title">
+      <div class="forum-closing__container">
+        <div><span>Kembali ke SADARIN</span><h2 id="forum-closing-title">Lanjutkan dari pengetahuan ke kebiasaan.</h2></div>
+        <a href="index.html"><span>Jelajahi Beranda</span><span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__message">
+        <div><span class="site-footer__label">Setelah halaman ini</span><h2>Tetap sadar setelah halaman ini berakhir.</h2></div>
+        <div class="site-footer__message-copy"><p>Bawa panduan dan cerita SADARIN ke kebiasaan sehari-hari—mulai dari satu sampah yang kamu kenali hari ini.</p><a href="index.html#fitur-sadarin"><span>Catat aksi</span><span aria-hidden="true">→</span></a></div>
+      </div>
+
+      <div class="site-footer__grid">
+        <div class="site-footer__brand"><img src="assets/logo/logo-sadarin.svg" alt="SADARIN"><p>SADARIN membantu mengenali sampah, memahami perjalanannya, dan mengubah pengetahuan menjadi kebiasaan yang lebih sadar.</p></div>
+        <nav class="site-footer__column" aria-label="Jelajahi SADARIN"><span class="site-footer__label">Jelajahi</span><a href="index.html">Beranda</a><a href="forum.html" aria-current="page">Forum</a><a href="tentang.html">Tentang</a></nav>
+        <nav class="site-footer__column" aria-label="Panduan Sampah"><span class="site-footer__label">Panduan</span><a href="index.html#organik">Organik</a><a href="index.html#plastik">Plastik</a><a href="index.html#kertas">Kertas</a><a href="index.html#residu">Residu</a></nav>
+        <div class="site-footer__context"><span class="site-footer__label">Konteks Global</span><p>Masalah sampah tidak berhenti di satu tempat.</p><a href="https://www.theworldcounts.com/" target="_blank" rel="noopener noreferrer"><span>Sumber: The World Counts</span><span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="site-footer__bottom"><span>RPL SMKN 1 GIANYAR / 2026</span><span>© 2026 SADARIN</span></div>
+    </div>
+  </footer>
+
+  <script src="js/index.js?v=20260826"></script>
 </body>
 </html>
