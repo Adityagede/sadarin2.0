@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/forum.css?v=20260826">
   <link rel="icon" href="assets/logo/logo-sadarin.svg">
 </head>
 <body class="about-page">
@@ -51,28 +52,28 @@
             <div class="guide-mega-inner">
               <ul class="guide-mega-categories">
                 <li>
-                  <a href="index.html#organik" class="guide-mega-item guide-organic">
+                  <a href="organik.html" class="guide-mega-item guide-organic">
                     <span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-organic"></use></svg></span>
                     <span class="guide-mega-copy"><strong>Organik</strong></span>
                     <span class="guide-mega-arrow" aria-hidden="true">→</span>
                   </a>
                 </li>
                 <li>
-                  <a href="index.html#plastik" class="guide-mega-item guide-plastic">
+                  <a href="plastik.html" class="guide-mega-item guide-plastic">
                     <span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-plastic"></use></svg></span>
                     <span class="guide-mega-copy"><strong>Plastik</strong></span>
                     <span class="guide-mega-arrow" aria-hidden="true">→</span>
                   </a>
                 </li>
                 <li>
-                  <a href="index.html#kertas" class="guide-mega-item guide-paper">
+                  <a href="kertas.html" class="guide-mega-item guide-paper">
                     <span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-paper"></use></svg></span>
                     <span class="guide-mega-copy"><strong>Kertas</strong></span>
                     <span class="guide-mega-arrow" aria-hidden="true">→</span>
                   </a>
                 </li>
                 <li>
-                  <a href="index.html#residu" class="guide-mega-item guide-residue">
+                  <a href="residu.html" class="guide-mega-item guide-residue">
                     <span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-residue"></use></svg></span>
                     <span class="guide-mega-copy"><strong>Residu</strong></span>
                     <span class="guide-mega-arrow" aria-hidden="true">→</span>
@@ -117,22 +118,22 @@
               </svg>
             </button>
             <div class="mobile-guide-panel" id="mobileGuidePanel" aria-hidden="true">
-              <a href="index.html#organik">
+              <a href="organik.html">
                 <span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-organic"></use></svg></span>
                 <span class="mobile-guide-name">Organik<small>Kembali ke tanah</small></span>
                 <span aria-hidden="true">→</span>
               </a>
-              <a href="index.html#plastik">
+              <a href="plastik.html">
                 <span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-plastic"></use></svg></span>
                 <span class="mobile-guide-name">Plastik<small>Bersihkan sebelum dipilah</small></span>
                 <span aria-hidden="true">→</span>
               </a>
-              <a href="index.html#kertas">
+              <a href="kertas.html">
                 <span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-paper"></use></svg></span>
                 <span class="mobile-guide-name">Kertas<small>Jaga tetap kering</small></span>
                 <span aria-hidden="true">→</span>
               </a>
-              <a href="index.html#residu">
+              <a href="residu.html">
                 <span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-residue"></use></svg></span>
                 <span class="mobile-guide-name">Residu<small>Pilihan pembuangan terakhir</small></span>
                 <span aria-hidden="true">→</span>
@@ -161,12 +162,17 @@
   </header>
 
   <main>
-    <section class="about-page-hero" aria-labelledby="about-page-title">
-      <div class="about-page-hero__container">
-        <h1 id="about-page-title">Tentang SADARIN</h1>
-        <figure class="about-page-hero__media">
-          <img src="assets/images/tentang-hero.webp" alt="Ruang hijau dilihat dari udara" fetchpriority="high">
-        </figure>
+    <section class="forum-hero" aria-labelledby="about-page-title">
+      <img class="forum-hero__image" src="assets/images/tentang-hero.webp" alt="Ruang hijau dilihat dari udara" fetchpriority="high">
+      <div class="forum-hero__overlay" aria-hidden="true"></div>
+      <div class="forum-hero__container">
+        <nav class="forum-breadcrumb" aria-label="Breadcrumb">
+          <ol><li><a href="index.html">Beranda</a></li><li aria-current="page">Tentang</li></ol>
+        </nav>
+        <div class="forum-hero__title-panel">
+          <span>Tentang SADARIN</span>
+          <h1 id="about-page-title">Kenali SADARIN</h1>
+        </div>
       </div>
     </section>
 
@@ -175,88 +181,54 @@
 ========================================================= -->
 <section class="about-sadarin" id="tentang-sadarin">
   <div class="about-sadarin__container">
-    <!-- SECTION META -->
-    <div class="about-sadarin__meta">
-      <span class="about-sadarin__meta-note">
-        KENALI • PAHAMI • MULAI
-      </span>
-    </div>
     <div class="about-sadarin__layout">
-      <!-- =====================================================
-           VIDEO
-      ====================================================== -->
-      <div class="about-sadarin__media">
+      <figure class="about-sadarin__media">
         <div class="about-sadarin__media-shape" aria-hidden="true"></div>
-        <figure class="about-sadarin__video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/88eXGLIziRM?si=fcOrVcvemj2YJr0m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        <div class="about-sadarin__image-frame">
+          <iframe src="https://www.youtube.com/embed/88eXGLIziRM?si=EVMQtILAk2gsKxv7" title="Video pengenalan SADARIN" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
           </iframe>
-        </figure>
-        <div class="about-sadarin__video-info">
-          <div>
-            <span class="about-sadarin__video-label">Disclaimer:</span>
-            <p>
-              Ini hanya video demo atau rekayasa bukan nyata aksi nyata SADARIN.
-            </p>
+        </div>
+        <figcaption>Perubahan yang terasa nyata selalu dimulai dari hal yang dekat.</figcaption>
+      </figure>
+      <div class="about-sadarin__content">
+        <span class="about-sadarin__small-title">TENTANG SADARIN</span>
+        <h2>Ruang sederhana untuk memahami ke mana sampah kita pergi.</h2>
+        <p class="about-sadarin__description">
+          SADARIN berawal dari kegelisahan yang dekat dengan keseharian: kita
+          membuang sesuatu setiap hari, tetapi jarang tahu ke mana perjalanannya
+          berlanjut. Karena itu, kami membantu orang mengenali sampah, mencatat
+          kebiasaan, dan memilih langkah yang realistis—tanpa tuntutan untuk
+          langsung sempurna.
+        </p>
+        <div class="about-sadarin__purpose">
+          <h3>SADARIN membantu lewat tiga hal</h3>
+          <div class="about-sadarin__purpose-grid">
+            <div class="about-sadarin__purpose-item">
+              <span>01</span>
+              <strong>Kenali</strong>
+            </div>
+            <div class="about-sadarin__purpose-item">
+              <span>02</span>
+              <strong>Catat</strong>
+            </div>
+            <div class="about-sadarin__purpose-item">
+              <span>03</span>
+              <strong>Kurangi</strong>
+            </div>
           </div>
-          <a href="#panduan-sampah" class="about-sadarin__youtube" aria-label="Buka panduan sampah SADARIN">
-            <span>Panduan</span>
+        </div>
+        <div class="about-sadarin__action">
+          <a href="index.html#panduan-sampah" class="about-sadarin__button">
+            <span>Mulai dari panduan</span>
             <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M7 17L17 7M9 7h8v8"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+              <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </a>
         </div>
       </div>
-      <!-- =====================================================
-           CONTENT
-      ====================================================== -->
-      <div class="about-sadarin__content">
-        <span class="about-sadarin__small-title">
-          KENAPA SADARIN ADA
-        </span>
-        <h2>
-          Membantu kita lebih sadar dengan sampah yang kita hasilkan.
-        </h2>
-        <p class="about-sadarin__description">
-          SADARIN hadir sebagai ruang sederhana untuk memahami
-          perjalanan sampah dari kebiasaan sehari-hari. Mulai dari
-          mencatat apa yang kita buang, memahami dampaknya, sampai
-          menemukan langkah kecil yang bisa dilakukan berikutnya.
-        </p>
-        <p class="about-sadarin__description">
-          Kami percaya perubahan tidak harus selalu dimulai dari
-          tindakan besar. Mengenali kebiasaan sendiri adalah tempat
-          yang cukup baik untuk memulainya.
-        </p>
-        <!-- PURPOSE -->
-        <div class="about-sadarin__purpose">
-          <h3>
-            SADARIN dibangun untuk tiga langkah sederhana
-          </h3>
-          <div class="about-sadarin__purpose-grid">
-            <div class="about-sadarin__purpose-item">
-              <span>01</span>
-              <strong>Memahami</strong>
-            </div>
-            <div class="about-sadarin__purpose-item">
-              <span>02</span>
-              <strong>Mencatat</strong>
-            </div>
-            <div class="about-sadarin__purpose-item">
-              <span>03</span>
-              <strong>Mengurangi</strong>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
+  <div class="about-sadarin__decoration" aria-hidden="true"></div>
 </section>
 
 <section class="faq" id="faq" aria-labelledby="faq-title">
@@ -353,19 +325,19 @@
 </section>
 
 <section class="final-action" aria-labelledby="final-action-title" data-final-action>
-  <img class="final-action__image" src="assets/images/short-info.webp" alt="Pemandangan udara taman hijau dengan jam besar di antara pepohonan" loading="lazy">
+  <img class="final-action__image" src="assets/images/short-info.webp" alt="Sekelompok warga memungut sampah bersama di ruang terbuka" loading="lazy">
   <div class="final-action__overlay" aria-hidden="true"></div>
   <div class="final-action__container">
     <div class="final-action__copy">
-      <h2 id="final-action-title" data-final-reveal>Mulai dari yang<br>ada di tanganmu.</h2>
+      <h2 id="final-action-title" data-final-reveal>Mulai dari yang ada di tanganmu.</h2>
       <p data-final-reveal>Tidak harus mengubah semuanya sekaligus. Kenali satu sampah, pilih langkah yang tepat, lalu jadikan kebiasaan kecil itu bagian dari harimu.</p>
     </div>
     <div class="final-action__actions" data-final-reveal>
-      <a href="#fitur-sadarin" class="final-action__button final-action__button--primary">
+      <a href="index.html#fitur-sadarin" class="final-action__button final-action__button--primary">
         <span>Catat aksi hari ini</span>
         <span aria-hidden="true">→</span>
       </a>
-      <a href="#panduan-sampah" class="final-action__button final-action__button--secondary">
+      <a href="index.html#panduan-sampah" class="final-action__button final-action__button--secondary">
         <span>Kenali sampahmu</span>
         <span aria-hidden="true">→</span>
       </a>
@@ -383,13 +355,13 @@
     <div class="site-footer__container">
       <div class="site-footer__message">
         <div>
-          <span class="site-footer__label">Setelah halaman ini</span>
-          <h2>Tetap sadar setelah halaman ini berakhir.</h2>
+          <span class="site-footer__label">Bawa pulang satu kebiasaan</span>
+          <h2>Pilih satu hal kecil untuk dilakukan lagi besok.</h2>
         </div>
         <div class="site-footer__message-copy">
-          <p>Bawa panduan dan cerita SADARIN ke kebiasaan sehari-hari—mulai dari satu sampah yang kamu kenali hari ini.</p>
+          <p>Tidak perlu menunggu sempurna. Mulai dari benda yang paling dekat, lalu lihat ke mana kebiasaan itu membawamu.</p>
           <a href="index.html#fitur-sadarin">
-            <span>Catat aksi</span>
+            <span>Catat langkahmu</span>
             <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -410,10 +382,10 @@
 
         <nav class="site-footer__column" aria-label="Panduan Sampah">
           <span class="site-footer__label">Panduan</span>
-          <a href="index.html#organik">Organik</a>
-          <a href="index.html#plastik">Plastik</a>
-          <a href="index.html#kertas">Kertas</a>
-          <a href="index.html#residu">Residu</a>
+          <a href="organik.html">Organik</a>
+          <a href="plastik.html">Plastik</a>
+          <a href="kertas.html">Kertas</a>
+          <a href="residu.html">Residu</a>
         </nav>
 
         <div class="site-footer__context">
@@ -455,5 +427,6 @@
     </a>
   </div>
   <script src="js/index.js?v=20260824"></script>
+  <script src="js/sadarin.js?v=20260828"></script>
 </body>
 </html>

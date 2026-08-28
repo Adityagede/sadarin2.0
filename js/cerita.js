@@ -365,7 +365,6 @@
         title.textContent = related.title;
         const meta = document.createElement("span");
         meta.className = "related-story__meta";
-        meta.textContent = "Oleh: Tim SADARIN";
         copy.append(category, title, meta);
 
         link.append(figure, copy);
