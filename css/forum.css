@@ -140,8 +140,8 @@
 
 .forum-stories__head {
   max-width: 780px;
-  margin-inline: auto;
-  text-align: center;
+  margin-inline: 0;
+  text-align: left;
 }
 
 .forum-stories__head > span {
@@ -162,13 +162,13 @@
   display: block;
   width: 64px;
   height: 3px;
-  margin: 22px auto 0;
+  margin: 22px 0 0;
   background: var(--yellow);
 }
 
 .forum-stories__head p {
   max-width: 570px;
-  margin: 20px auto 0;
+  margin: 20px 0 0;
   color: var(--muted);
   font-size: .9rem;
   line-height: 1.7;
@@ -381,6 +381,19 @@
 
   .forum-stories {
     padding: 108px 0 118px;
+  }
+
+  .forum-stories__head {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .forum-stories__head h2::after {
+    margin-inline: auto;
+  }
+
+  .forum-stories__head p {
+    margin-inline: auto;
   }
 
   .forum-stories__head h2 {
