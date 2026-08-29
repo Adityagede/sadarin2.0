@@ -9,143 +9,541 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=20260827">
-  <link rel="stylesheet" href="css/panduan.css?v=20260827">
+  <link rel="stylesheet" href="css/panduan.css?v=20260829">
   <link rel="icon" href="assets/logo/logo-sadarin.svg">
 </head>
 <body class="guide-page guide-page--organic">
   <a class="guide-skip-link" href="#guide-content">Lewati ke isi panduan</a>
-  <div class="guide-progress" aria-hidden="true"><span></span></div>
-
+  <div class="guide-progress" aria-hidden="true">
+    <span></span>
+  </div>
   <header class="site-header" id="siteHeader">
     <svg class="nav-icon-sprite" aria-hidden="true">
-      <symbol id="icon-organic" viewBox="0 0 24 24"><path d="M19.5 4.5C13 4.8 7.8 7.1 5.7 11.1c-1.7 3.2-.6 6.8 2.4 7.8 3.2 1.1 6.1-.8 7.1-4.1.8-2.7 1.9-5.7 4.3-10.3Z"/><path d="M4.8 20c2.7-4.8 5.8-7.8 10.2-9.7"/></symbol>
-      <symbol id="icon-plastic" viewBox="0 0 24 24"><path d="M9.5 3h5M10 3v3.8L8 9.5v9A2.5 2.5 0 0 0 10.5 21h3a2.5 2.5 0 0 0 2.5-2.5v-9l-2-2.7V3"/><path d="M8 12h8M8 17h8"/></symbol>
-      <symbol id="icon-paper" viewBox="0 0 24 24"><path d="M6 3.5h8l4 4V21H6Z"/><path d="M14 3.5V8h4M9 12h6M9 15.5h6"/></symbol>
-      <symbol id="icon-residue" viewBox="0 0 24 24"><path d="M9.5 5.5 8 3h8l-1.5 2.5M8.7 8h6.6c2.2 2.8 3.2 5.6 3.2 8.3 0 3.1-2.2 4.7-6.5 4.7s-6.5-1.6-6.5-4.7C5.5 13.6 6.5 10.8 8.7 8Z"/><path d="M8.2 8h7.6"/></symbol>
+      <symbol id="icon-organic" viewBox="0 0 24 24">
+        <path d="M19.5 4.5C13 4.8 7.8 7.1 5.7 11.1c-1.7 3.2-.6 6.8 2.4 7.8 3.2 1.1 6.1-.8 7.1-4.1.8-2.7 1.9-5.7 4.3-10.3Z"/>
+        <path d="M4.8 20c2.7-4.8 5.8-7.8 10.2-9.7"/>
+      </symbol>
+      <symbol id="icon-plastic" viewBox="0 0 24 24">
+        <path d="M9.5 3h5M10 3v3.8L8 9.5v9A2.5 2.5 0 0 0 10.5 21h3a2.5 2.5 0 0 0 2.5-2.5v-9l-2-2.7V3"/>
+        <path d="M8 12h8M8 17h8"/>
+      </symbol>
+      <symbol id="icon-paper" viewBox="0 0 24 24">
+        <path d="M6 3.5h8l4 4V21H6Z"/>
+        <path d="M14 3.5V8h4M9 12h6M9 15.5h6"/>
+      </symbol>
+      <symbol id="icon-residue" viewBox="0 0 24 24">
+        <path d="M9.5 5.5 8 3h8l-1.5 2.5M8.7 8h6.6c2.2 2.8 3.2 5.6 3.2 8.3 0 3.1-2.2 4.7-6.5 4.7s-6.5-1.6-6.5-4.7C5.5 13.6 6.5 10.8 8.7 8Z"/>
+        <path d="M8.2 8h7.6"/>
+      </symbol>
     </svg>
     <div class="nav-container">
-      <a href="index.html" class="site-logo" aria-label="SADARIN — Beranda"><img src="assets/logo/logo-sadarin.svg" alt="SADARIN"></a>
+      <a href="index.html" class="site-logo" aria-label="SADARIN — Beranda">
+        <img src="assets/logo/logo-sadarin.svg" alt="SADARIN">
+      </a>
       <nav class="desktop-nav" aria-label="Navigasi utama">
         <a href="index.html">Beranda</a>
         <div class="nav-guide-desktop active" data-guide-desktop>
-          <button class="nav-guide-trigger" type="button" aria-expanded="false" aria-controls="guideMega"><span>Panduan Sampah</span><svg class="nav-guide-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m7 9.5 5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="guide-mega" id="guideMega" aria-hidden="true"><div class="guide-mega-inner"><ul class="guide-mega-categories">
-            <li><a href="organik.html" class="guide-mega-item guide-organic" aria-current="page"><span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-organic"></use></svg></span><span class="guide-mega-copy"><strong>Organik</strong></span><span class="guide-mega-arrow" aria-hidden="true">→</span></a></li>
-            <li><a href="plastik.html" class="guide-mega-item guide-plastic"><span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-plastic"></use></svg></span><span class="guide-mega-copy"><strong>Plastik</strong></span><span class="guide-mega-arrow" aria-hidden="true">→</span></a></li>
-            <li><a href="kertas.html" class="guide-mega-item guide-paper"><span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-paper"></use></svg></span><span class="guide-mega-copy"><strong>Kertas</strong></span><span class="guide-mega-arrow" aria-hidden="true">→</span></a></li>
-            <li><a href="residu.html" class="guide-mega-item guide-residue"><span class="guide-mega-icon"><svg aria-hidden="true"><use href="#icon-residue"></use></svg></span><span class="guide-mega-copy"><strong>Residu</strong></span><span class="guide-mega-arrow" aria-hidden="true">→</span></a></li>
-          </ul></div></div>
+          <button class="nav-guide-trigger" type="button" aria-expanded="false" aria-controls="guideMega">
+            <span>Panduan Sampah</span>
+            <svg class="nav-guide-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="m7 9.5 5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="guide-mega" id="guideMega" aria-hidden="true">
+            <div class="guide-mega-inner">
+              <ul class="guide-mega-categories">
+                <li>
+                  <a href="organik.html" class="guide-mega-item guide-organic" aria-current="page">
+                    <span class="guide-mega-icon">
+                      <svg aria-hidden="true">
+                        <use href="#icon-organic"></use>
+                      </svg>
+                    </span>
+                    <span class="guide-mega-copy">
+                      <strong>Organik</strong>
+                    </span>
+                    <span class="guide-mega-arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="plastik.html" class="guide-mega-item guide-plastic">
+                    <span class="guide-mega-icon">
+                      <svg aria-hidden="true">
+                        <use href="#icon-plastic"></use>
+                      </svg>
+                    </span>
+                    <span class="guide-mega-copy">
+                      <strong>Plastik</strong>
+                    </span>
+                    <span class="guide-mega-arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="kertas.html" class="guide-mega-item guide-paper">
+                    <span class="guide-mega-icon">
+                      <svg aria-hidden="true">
+                        <use href="#icon-paper"></use>
+                      </svg>
+                    </span>
+                    <span class="guide-mega-copy">
+                      <strong>Kertas</strong>
+                    </span>
+                    <span class="guide-mega-arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="residu.html" class="guide-mega-item guide-residue">
+                    <span class="guide-mega-icon">
+                      <svg aria-hidden="true">
+                        <use href="#icon-residue"></use>
+                      </svg>
+                    </span>
+                    <span class="guide-mega-copy">
+                      <strong>Residu</strong>
+                    </span>
+                    <span class="guide-mega-arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <a href="forum.html">Forum</a><a href="tentang.html">Tentang</a>
+        <a href="forum.html">Forum</a>
+        <a href="tentang.html">Tentang</a>
       </nav>
-      <a href="index.html#fitur-sadarin" class="nav-action"><span>Catat Aksi</span><span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+      <a href="index.html#fitur-sadarin" class="nav-action">
+        <span>Catat Aksi</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
     <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi mobile" aria-hidden="true">
       <button class="mobile-nav-backdrop" type="button" aria-label="Tutup menu"></button>
       <div class="mobile-nav-panel" tabindex="-1">
-        <div class="mobile-nav-meta"><span>Menu</span><span>Pilih tujuan</span></div>
+        <div class="mobile-nav-meta">
+          <span>Menu</span>
+          <span>Pilih tujuan</span>
+        </div>
         <div class="mobile-nav-links">
-          <a href="index.html"><small>01</small><span>Beranda</span></a>
-          <div class="mobile-guide"><button class="mobile-guide-trigger" type="button" aria-expanded="false" aria-controls="mobileGuidePanel"><small>02</small><span>Panduan Sampah</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m7 9.5 5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <a href="index.html">
+            <small>01</small>
+            <span>Beranda</span>
+          </a>
+          <div class="mobile-guide">
+            <button class="mobile-guide-trigger" type="button" aria-expanded="false" aria-controls="mobileGuidePanel">
+              <small>02</small>
+              <span>Panduan Sampah</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m7 9.5 5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
             <div class="mobile-guide-panel" id="mobileGuidePanel" aria-hidden="true">
-              <a href="organik.html" aria-current="page"><span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-organic"></use></svg></span><span class="mobile-guide-name">Organik<small>Kembali ke tanah</small></span><span aria-hidden="true">→</span></a>
-              <a href="plastik.html"><span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-plastic"></use></svg></span><span class="mobile-guide-name">Plastik<small>Bersihkan sebelum dipilah</small></span><span aria-hidden="true">→</span></a>
-              <a href="kertas.html"><span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-paper"></use></svg></span><span class="mobile-guide-name">Kertas<small>Jaga tetap kering</small></span><span aria-hidden="true">→</span></a>
-              <a href="residu.html"><span class="mobile-guide-icon"><svg aria-hidden="true"><use href="#icon-residue"></use></svg></span><span class="mobile-guide-name">Residu<small>Pilihan pembuangan terakhir</small></span><span aria-hidden="true">→</span></a>
+              <a href="organik.html" aria-current="page">
+                <span class="mobile-guide-icon">
+                  <svg aria-hidden="true">
+                    <use href="#icon-organic"></use>
+                  </svg>
+                </span>
+                <span class="mobile-guide-name">
+                  Organik
+                  <small>Kembali ke tanah</small>
+                </span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="plastik.html">
+                <span class="mobile-guide-icon">
+                  <svg aria-hidden="true">
+                    <use href="#icon-plastic"></use>
+                  </svg>
+                </span>
+                <span class="mobile-guide-name">
+                  Plastik
+                  <small>Bersihkan sebelum dipilah</small>
+                </span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="kertas.html">
+                <span class="mobile-guide-icon">
+                  <svg aria-hidden="true">
+                    <use href="#icon-paper"></use>
+                  </svg>
+                </span>
+                <span class="mobile-guide-name">
+                  Kertas
+                  <small>Jaga tetap kering</small>
+                </span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="residu.html">
+                <span class="mobile-guide-icon">
+                  <svg aria-hidden="true">
+                    <use href="#icon-residue"></use>
+                  </svg>
+                </span>
+                <span class="mobile-guide-name">
+                  Residu
+                  <small>Pilihan pembuangan terakhir</small>
+                </span>
+                <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
-          <a href="forum.html"><small>03</small><span>Forum</span></a><a href="tentang.html"><small>04</small><span>Tentang</span></a>
+          <a href="forum.html">
+            <small>03</small>
+            <span>Forum</span>
+          </a>
+          <a href="tentang.html">
+            <small>04</small>
+            <span>Tentang</span>
+          </a>
         </div>
-        <a href="index.html#fitur-sadarin" class="mobile-nav-action"><span>Catat aksi</span><span aria-hidden="true">↗</span></a>
-        <div class="mobile-nav-footer" aria-hidden="true"><span>Pilah · Pahami · Bertindak</span><span>SADARIN / 2026</span></div>
+        <a href="index.html#fitur-sadarin" class="mobile-nav-action">
+          <span>Catat aksi</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <div class="mobile-nav-footer" aria-hidden="true">
+          <span>Pilah · Pahami · Bertindak</span>
+          <span>SADARIN / 2026</span>
+        </div>
       </div>
     </nav>
   </header>
-
   <main id="guide-content">
-    <section class="guide-hero" style="--hero-position: 54% 62%" aria-labelledby="guide-title">
+      <section class="guide-hero" style="--hero-position: 54% 58%" aria-labelledby="guide-title">
       <img class="guide-hero__media" src="assets/images/organik-panduan.webp" width="4000" height="6000" alt="Sisa makanan dipisahkan ke wadah organik" fetchpriority="high">
       <div class="guide-hero__overlay" aria-hidden="true"></div>
       <div class="guide-hero__container">
-        <nav class="guide-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Beranda</a></li><li><a href="index.html#panduan-sampah">Panduan Sampah</a></li><li aria-current="page">Organik</li></ol></nav>
+        <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li>
+              <a href="index.html">Beranda</a>
+            </li>
+            <li>
+              <a href="index.html#panduan-sampah">Panduan Sampah</a>
+            </li>
+            <li aria-current="page">Organik</li>
+          </ol>
+        </nav>
         <div class="guide-hero__content">
-          <div><span class="guide-hero__kicker">01 / 04 · Organik</span><h1 id="guide-title">Yang membusuk, masih bisa bertumbuh.</h1></div>
-          <div class="guide-hero__lead-wrap"><p class="guide-hero__lead">Sisa dapur bukan sekadar sesuatu yang ingin cepat disingkirkan. Saat dipisahkan sejak awal, ia bisa kembali menjadi unsur yang berguna—tanpa mengotori material lain di sebelahnya.</p><div class="guide-hero__rule"><span>Pegangan utama</span><p>Terurai alami bukan berarti boleh dibuang sembarang. Pisahkan, kurangi kadar airnya, lalu pilih jalur olah yang tersedia.</p></div></div>
+          <div>
+            <span class="guide-hero__kicker"> · Organik</span>
+            <h1 id="guide-title">Yang membusuk, masih bisa bertumbuh.</h1>
+          </div>
+          <div class="guide-hero__lead-wrap">
+            <p class="guide-hero__lead">
+              Sisa dapur bukan sekadar sesuatu yang ingin cepat disingkirkan. Saat dipisahkan sejak awal, ia
+              bisa kembali menjadi unsur yang berguna—tanpa mengotori material lain di sebelahnya.
+            </p>
+            <div class="guide-hero__rule">
+              <span>Pegangan utama</span>
+              <p>
+                Terurai alami bukan berarti boleh dibuang sembarang. Pisahkan, kurangi kadar airnya, lalu
+                pilih jalur olah yang tersedia.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="guide-hero__bottom"><span>Waktu baca ± 5 menit</span><a class="guide-hero__scroll" href="#kenali"><span>Mulai kenali</span><i aria-hidden="true"></i></a></div>
+        <div class="guide-hero__bottom">
+          <span>Waktu baca ± 5 menit</span>
+          <a class="guide-hero__scroll" href="#kenali">
+            <span>Mulai kenali</span>
+            <i aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </section>
-
-    <nav class="guide-category-nav" aria-label="Kategori panduan sampah"><div class="guide-category-nav__inner">
-      <a href="organik.html" aria-current="page"><svg aria-hidden="true"><use href="#icon-organic"></use></svg><span>Organik</span></a>
-      <a href="plastik.html"><svg aria-hidden="true"><use href="#icon-plastic"></use></svg><span>Plastik</span></a>
-      <a href="kertas.html"><svg aria-hidden="true"><use href="#icon-paper"></use></svg><span>Kertas</span></a>
-      <a href="residu.html"><svg aria-hidden="true"><use href="#icon-residue"></use></svg><span>Residu</span></a>
-    </div></nav>
-
+    <nav class="guide-category-nav" aria-label="Kategori panduan sampah">
+      <div class="guide-category-nav__inner">
+        <a href="organik.html" aria-current="page">
+          <svg aria-hidden="true">
+            <use href="#icon-organic"></use>
+          </svg>
+          <span>Organik</span>
+        </a>
+        <a href="plastik.html">
+          <svg aria-hidden="true">
+            <use href="#icon-plastic"></use>
+          </svg>
+          <span>Plastik</span>
+        </a>
+        <a href="kertas.html">
+          <svg aria-hidden="true">
+            <use href="#icon-paper"></use>
+          </svg>
+          <span>Kertas</span>
+        </a>
+        <a href="residu.html">
+          <svg aria-hidden="true">
+            <use href="#icon-residue"></use>
+          </svg>
+          <span>Residu</span>
+        </a>
+      </div>
+    </nav>
     <section class="guide-section" id="kenali">
       <div class="guide-section__container">
-        <header class="guide-section__head" data-guide-reveal><div><span class="guide-eyebrow">Kenali bahannya</span><h2>Masuk organik kalau asalnya dari makhluk hidup—dan mudah terurai.</h2></div><p class="guide-section__intro">Lihat bahan utamanya, bukan sekadar bentuk atau warna wadahnya. Sisa makanan dan bagian tanaman umumnya organik; kemasan yang menempel padanya belum tentu ikut organik.</p></header>
+        <header class="guide-section__head" data-guide-reveal>
+          <div>
+            <span class="guide-eyebrow">Kenali bahannya</span>
+            <h2>Masuk organik kalau asalnya dari makhluk hidup—dan mudah terurai.</h2>
+          </div>
+          <p class="guide-section__intro">
+            Lihat bahan utamanya, bukan sekadar bentuk atau warna wadahnya. Sisa makanan dan bagian
+            tanaman umumnya organik; kemasan yang menempel padanya belum tentu ikut organik.
+          </p>
+        </header>
         <div class="guide-identify__grid">
-          <article class="guide-check-card guide-check-card--yes" data-guide-reveal><div class="guide-check-card__label"><span>Ya, ini organik</span><span aria-hidden="true">✓</span></div><ul><li>Sisa nasi, sayur, lauk, dan roti</li><li>Kulit buah, potongan sayur, dan cangkang telur</li><li>Ampas kopi, daun teh tanpa kantong sintetis</li><li>Daun kering, bunga layu, dan potongan rumput</li></ul></article>
-          <article class="guide-check-card" data-guide-reveal><div class="guide-check-card__label"><span>Tahan dulu</span><span aria-hidden="true">?</span></div><ul><li>Minyak jelantah perlu wadah dan jalur khusus</li><li>Tulang besar dan cangkang keras terurai lebih lama</li><li>“Bioplastik” hanya masuk jika fasilitas menerimanya</li><li>Tisu berlapis bahan kimia atau sangat kotor masuk residu</li></ul></article>
+          <article class="guide-check-card guide-check-card--yes" data-guide-reveal>
+            <div class="guide-check-card__label">
+              <span>Ya, ini organik</span>
+              <span aria-hidden="true">✓</span>
+            </div>
+            <ul>
+              <li>Sisa nasi, sayur, lauk, dan roti</li>
+              <li>Kulit buah, potongan sayur, dan cangkang telur</li>
+              <li>Ampas kopi, daun teh tanpa kantong sintetis</li>
+              <li>Daun kering, bunga layu, dan potongan rumput</li>
+            </ul>
+          </article>
+          <article class="guide-check-card" data-guide-reveal>
+            <div class="guide-check-card__label">
+              <span>Tahan dulu</span>
+              <span aria-hidden="true">?</span>
+            </div>
+            <ul>
+              <li>Minyak jelantah perlu wadah dan jalur khusus</li>
+              <li>Tulang besar dan cangkang keras terurai lebih lama</li>
+              <li>“Bioplastik” hanya masuk jika fasilitas menerimanya</li>
+              <li>Tisu berlapis bahan kimia atau sangat kotor masuk residu</li>
+            </ul>
+          </article>
         </div>
-        <aside class="guide-test" data-guide-reveal><div class="guide-test__top"><h3>Tes 10 detik</h3><span>Sebelum memasukkan</span></div><ol><li>Apakah bahan ini berasal dari sisa makanan atau tanaman?</li><li>Apakah plastik, stiker, karet, dan kemasannya sudah dilepas?</li><li>Apakah jalur komposmu menerima bahan matang, tulang, atau produk hewani?</li></ol></aside>
+        <aside class="guide-test" data-guide-reveal>
+          <div class="guide-test__top">
+            <h3>Tes 10 detik</h3>
+            <span>Sebelum memasukkan</span>
+          </div>
+          <ol>
+            <li>Apakah bahan ini berasal dari sisa makanan atau tanaman?</li>
+            <li>Apakah plastik, stiker, karet, dan kemasannya sudah dilepas?</li>
+            <li>Apakah jalur komposmu menerima bahan matang, tulang, atau produk hewani?</li>
+          </ol>
+        </aside>
       </div>
     </section>
-
     <section class="guide-section guide-section--paper">
       <div class="guide-section__container">
-        <header class="guide-section__head" data-guide-reveal><div><span class="guide-eyebrow">Sebelum dilepas</span><h2>Tiga langkah kecil agar organik tidak jadi beban basah.</h2></div><p class="guide-section__intro">Pemilahan terbaik terjadi di titik pertama sampah muncul: talenan, meja makan, atau halaman. Setelah tercampur, pekerjaan memisahkannya menjadi jauh lebih berat.</p></header>
+        <header class="guide-section__head" data-guide-reveal>
+          <div>
+            <span class="guide-eyebrow">Sebelum dilepas</span>
+            <h2>Tiga langkah kecil agar organik tidak jadi beban basah.</h2>
+          </div>
+          <p class="guide-section__intro">
+            Pemilahan terbaik terjadi di titik pertama sampah muncul: talenan, meja makan, atau halaman.
+            Setelah tercampur, pekerjaan memisahkannya menjadi jauh lebih berat.
+          </p>
+        </header>
         <div class="guide-prep">
-          <figure class="guide-prep__media" style="--prep-position: 52% 66%" data-guide-reveal><img src="assets/images/organik-panduan.webp" width="4000" height="6000" loading="lazy" alt="Wadah terpisah untuk sisa makanan organik"><figcaption class="guide-prep__caption"><span>Pisahkan di sumber</span><span>01—03</span></figcaption></figure>
+          <figure class="guide-prep__media" style="--prep-position: 52% 66%" data-guide-reveal>
+            <img src="assets/images/organik-panduan.webp" width="4000" height="6000" loading="lazy" alt="Wadah terpisah untuk sisa makanan organik">
+            <figcaption class="guide-prep__caption">
+              <span>Pisahkan di sumber</span>
+              <span>01—03</span>
+            </figcaption>
+          </figure>
           <ol class="guide-steps">
-            <li class="guide-step" data-guide-reveal><div><h3>Lepaskan yang bukan bagiannya</h3><p>Ambil karet, stiker buah, tusuk sate, sendok plastik, bungkus bumbu, dan kantong teh berbahan sintetis. Satu benda kecil bisa ikut terbawa sampai proses akhir.</p></div></li>
-            <li class="guide-step" data-guide-reveal><div><h3>Tiriskan, jangan dimandikan</h3><p>Kurangi kuah dan cairan berlebih agar wadah tidak cepat berbau atau bocor. Tidak perlu mencuci sisa makanan—cukup cegah air bebas menggenang.</p></div></li>
-            <li class="guide-step" data-guide-reveal><div><h3>Sesuaikan dengan jalur olah</h3><p>Kompos rumahan paling mudah dimulai dari sisa buah, sayur, daun kering, dan ampas. Jika diserahkan ke pengelola, ikuti daftar bahan yang mereka terima.</p></div></li>
+            <li class="guide-step" data-guide-reveal>
+              <div>
+                <h3>Lepaskan yang bukan bagiannya</h3>
+                <p>
+                  Ambil karet, stiker buah, tusuk sate, sendok plastik, bungkus bumbu, dan kantong teh berbahan
+                  sintetis. Satu benda kecil bisa ikut terbawa sampai proses akhir.
+                </p>
+              </div>
+            </li>
+            <li class="guide-step" data-guide-reveal>
+              <div>
+                <h3>Tiriskan, jangan dimandikan</h3>
+                <p>
+                  Kurangi kuah dan cairan berlebih agar wadah tidak cepat berbau atau bocor. Tidak perlu mencuci
+                  sisa makanan—cukup cegah air bebas menggenang.
+                </p>
+              </div>
+            </li>
+            <li class="guide-step" data-guide-reveal>
+              <div>
+                <h3>Sesuaikan dengan jalur olah</h3>
+                <p>
+                  Kompos rumahan paling mudah dimulai dari sisa buah, sayur, daun kering, dan ampas. Jika
+                  diserahkan ke pengelola, ikuti daftar bahan yang mereka terima.
+                </p>
+              </div>
+            </li>
           </ol>
         </div>
       </div>
     </section>
-
     <section class="guide-section guide-section--dark">
       <div class="guide-section__container">
-        <header class="guide-section__head" data-guide-reveal><div><span class="guide-eyebrow">Setelah dipisahkan</span><h2>Organik punya perjalanan pendek—kalau jalurnya jelas.</h2></div><p class="guide-section__intro">Tujuannya bukan sekadar memindahkan sisa dapur ke wadah berbeda. Tujuannya menjaga bahan organik cukup bersih untuk diolah dan mengembalikannya ke siklus alami.</p></header>
+        <header class="guide-section__head" data-guide-reveal>
+          <div>
+            <span class="guide-eyebrow">Setelah dipisahkan</span>
+            <h2>Organik punya perjalanan pendek—kalau jalurnya jelas.</h2>
+          </div>
+          <p class="guide-section__intro">
+            Tujuannya bukan sekadar memindahkan sisa dapur ke wadah berbeda. Tujuannya menjaga bahan
+            organik cukup bersih untuk diolah dan mengembalikannya ke siklus alami.
+          </p>
+        </header>
         <div class="guide-journey">
-          <article class="guide-journey__item" data-guide-reveal><span class="guide-journey__mark"></span><small>01 · Sumber</small><h3>Dipisahkan</h3><p>Sisa dapur masuk wadah khusus sebelum menyentuh plastik, kertas, atau residu.</p></article>
-          <article class="guide-journey__item" data-guide-reveal><span class="guide-journey__mark"></span><small>02 · Persiapan</small><h3>Dicacah &amp; diseimbangkan</h3><p>Bahan basah dipotong kecil lalu dipadukan dengan daun kering atau bahan kaya karbon.</p></article>
-          <article class="guide-journey__item" data-guide-reveal><span class="guide-journey__mark"></span><small>03 · Proses</small><h3>Diurai</h3><p>Mikroorganisme bekerja dengan udara, kelembapan, dan waktu yang cukup.</p></article>
-          <article class="guide-journey__item" data-guide-reveal><span class="guide-journey__mark"></span><small>04 · Kembali</small><h3>Menjadi pembenah tanah</h3><p>Hasil matang dapat membantu struktur tanah—bukan menjadi tumpukan baru.</p></article>
+          <article class="guide-journey__item" data-guide-reveal>
+            <span class="guide-journey__mark"></span>
+            <small>01 · Sumber</small>
+            <h3>Dipisahkan</h3>
+            <p>Sisa dapur masuk wadah khusus sebelum menyentuh plastik, kertas, atau residu.</p>
+          </article>
+          <article class="guide-journey__item" data-guide-reveal>
+            <span class="guide-journey__mark"></span>
+            <small>02 · Persiapan</small>
+            <h3>Dicacah &amp; diseimbangkan</h3>
+            <p>Bahan basah dipotong kecil lalu dipadukan dengan daun kering atau bahan kaya karbon.</p>
+          </article>
+          <article class="guide-journey__item" data-guide-reveal>
+            <span class="guide-journey__mark"></span>
+            <small>03 · Proses</small>
+            <h3>Diurai</h3>
+            <p>Mikroorganisme bekerja dengan udara, kelembapan, dan waktu yang cukup.</p>
+          </article>
+          <article class="guide-journey__item" data-guide-reveal>
+            <span class="guide-journey__mark"></span>
+            <small>04 · Kembali</small>
+            <h3>Menjadi pembenah tanah</h3>
+            <p>Hasil matang dapat membantu struktur tanah—bukan menjadi tumpukan baru.</p>
+          </article>
         </div>
-        <aside class="guide-route-note" data-guide-reveal><strong>Catatan setempat</strong>Aturan penerimaan berbeda antarprogram. Ada pengolah yang menerima sisa makanan matang; ada yang hanya menerima bahan nabati mentah. Tanyakan sebelum menyetor, lalu pertahankan wadah organik tanpa campuran.</aside>
+        <aside class="guide-route-note" data-guide-reveal>
+          <strong>Catatan setempat</strong>
+          Aturan penerimaan berbeda antarprogram. Ada pengolah yang menerima sisa makanan matang; ada
+          yang hanya menerima bahan nabati mentah. Tanyakan sebelum menyetor, lalu pertahankan wadah
+          organik tanpa campuran.
+        </aside>
       </div>
     </section>
 
-    <section class="guide-section">
-      <div class="guide-section__container">
-        <header class="guide-section__head" data-guide-reveal><div><span class="guide-eyebrow">Yang sering keliru</span><h2>Bisa terurai bukan berarti selesai dengan sendirinya.</h2></div><p class="guide-section__intro">Organik tetap membutuhkan kondisi yang tepat. Ketika dibungkus rapat bersama sampah campur, potensi untuk kembali ke tanah ikut terkunci.</p></header>
-        <div class="guide-mistakes">
-          <article class="guide-mistake" data-guide-reveal><span>01</span><div><h3>“Asal alami, boleh dibuang ke kebun.”</h3><p>Sisa makanan di permukaan dapat mengundang hama dan menimbulkan bau. Olah dalam sistem kompos yang terkelola atau serahkan ke jalur pengumpulan.</p></div></article>
-          <article class="guide-mistake" data-guide-reveal><span>02</span><div><h3>“Kantongnya nanti ikut hancur.”</h3><p>Plastik biasa tidak berubah menjadi kompos. Bahkan kantong berlabel komposabel membutuhkan kondisi tertentu dan belum tentu diterima fasilitas setempat.</p></div></article>
-          <article class="guide-mistake" data-guide-reveal><span>03</span><div><h3>“Semua sisa makanan diperlakukan sama.”</h3><p>Daging, produk susu, minyak, dan tulang lebih menantang untuk kompos rumahan. Mulai dari bahan nabati yang sederhana, lalu perluas hanya jika sistemmu siap.</p></div></article>
+    <section class="guide-next" aria-labelledby="guide-next-title">
+      <div class="guide-next__container">
+        <div class="guide-next__head" data-guide-reveal>
+          <div>
+            <span class="guide-eyebrow">Lanjut mengenali</span>
+            <h2 id="guide-next-title">Bahan berikutnya.</h2>
+          </div>
+          <span>02—04</span>
         </div>
-        <aside class="guide-callout" data-guide-reveal><div><span>Mulai hari ini</span><p>Taruh satu wadah kecil dekat area potong. Pemilahan paling konsisten adalah yang tidak meminta kita berjalan jauh.</p></div><a href="index.html#fitur-sadarin"><span>Catat aksi organik</span><span aria-hidden="true">→</span></a></aside>
+        <div class="guide-next__grid">
+          <a class="guide-next-card" href="plastik.html" data-guide-reveal>
+            <img src="assets/images/plastik-panduan.webp" width="2624" height="3936" loading="lazy" alt="Pekerja memilah kemasan plastik">
+            <div class="guide-next-card__copy">
+              <div>
+                <small>Panduan 02</small>
+                <h3>Plastik</h3>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="guide-next-card" href="kertas.html" data-guide-reveal>
+            <img src="assets/images/kertas-panduan.webp" width="6240" height="4160" loading="lazy" alt="Kertas dikumpulkan terpisah">
+            <div class="guide-next-card__copy">
+              <div>
+                <small>Panduan 03</small>
+                <h3>Kertas</h3>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="guide-next-card" href="residu.html" data-guide-reveal>
+            <img src="assets/images/residu-panduan.webp" width="5038" height="3358" loading="lazy" alt="Contoh sampah residu">
+            <div class="guide-next-card__copy">
+              <div>
+                <small>Panduan 04</small>
+                <h3>Residu</h3>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
-
-    <section class="guide-next" aria-labelledby="guide-next-title"><div class="guide-next__container"><div class="guide-next__head" data-guide-reveal><div><span class="guide-eyebrow">Lanjut mengenali</span><h2 id="guide-next-title">Bahan berikutnya.</h2></div><span>02—04</span></div><div class="guide-next__grid">
-      <a class="guide-next-card" href="plastik.html" data-guide-reveal><img src="assets/images/plastik-panduan.webp" width="2624" height="3936" loading="lazy" alt="Pekerja memilah kemasan plastik"><div class="guide-next-card__copy"><div><small>Panduan 02</small><h3>Plastik</h3></div><span aria-hidden="true">↗</span></div></a>
-      <a class="guide-next-card" href="kertas.html" data-guide-reveal><img src="assets/images/kertas-panduan.webp" width="6240" height="4160" loading="lazy" alt="Kertas dikumpulkan terpisah"><div class="guide-next-card__copy"><div><small>Panduan 03</small><h3>Kertas</h3></div><span aria-hidden="true">↗</span></div></a>
-      <a class="guide-next-card" href="residu.html" data-guide-reveal><img src="assets/images/residu-panduan.webp" width="5038" height="3358" loading="lazy" alt="Contoh sampah residu"><div class="guide-next-card__copy"><div><small>Panduan 04</small><h3>Residu</h3></div><span aria-hidden="true">↗</span></div></a>
-    </div></div></section>
   </main>
-
-  <footer class="site-footer"><div class="site-footer__container">
-    <div class="site-footer__message"><div><span class="site-footer__label">Setelah halaman ini</span><h2>Yang dipisahkan hari ini, punya peluang esok hari.</h2></div><div class="site-footer__message-copy"><p>Bawa panduan SADARIN ke kebiasaan sehari-hari—mulai dari satu sisa dapur yang kamu kenali hari ini.</p><a href="index.html#fitur-sadarin"><span>Catat aksi</span><span aria-hidden="true">→</span></a></div></div>
-    <div class="site-footer__grid"><div class="site-footer__brand"><img src="assets/logo/logo-sadarin.svg" alt="SADARIN"><p>SADARIN membantu mengenali sampah, memahami perjalanannya, dan mengubah pengetahuan menjadi kebiasaan yang lebih sadar.</p></div><nav class="site-footer__column" aria-label="Jelajahi SADARIN"><span class="site-footer__label">Jelajahi</span><a href="index.html">Beranda</a><a href="forum.html">Forum</a><a href="tentang.html">Tentang</a></nav><nav class="site-footer__column" aria-label="Panduan Sampah"><span class="site-footer__label">Panduan</span><a href="organik.html" aria-current="page">Organik</a><a href="plastik.html">Plastik</a><a href="kertas.html">Kertas</a><a href="residu.html">Residu</a></nav><div class="site-footer__context"><span class="site-footer__label">Ingat</span><p>Aturan pengolahan mengikuti fasilitas di daerahmu.</p><a href="index.html#panduan-sampah"><span>Lihat semua panduan</span><span aria-hidden="true">↗</span></a></div></div>
-    <div class="site-footer__bottom"><span>RPL SMKN 1 GIANYAR / 2026</span><span>© 2026 SADARIN</span></div>
-  </div></footer>
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__message">
+        <div>
+          <span class="site-footer__label">Setelah halaman ini</span>
+          <h2>Yang dipisahkan hari ini, punya peluang esok hari.</h2>
+        </div>
+        <div class="site-footer__message-copy">
+          <p>Bawa panduan SADARIN ke kebiasaan sehari-hari—mulai dari satu sisa dapur yang kamu kenali hari ini.</p>
+          <a href="index.html#fitur-sadarin">
+            <span>Catat aksi</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <img src="assets/logo/logo-sadarin.svg" alt="SADARIN">
+          <p>
+            SADARIN membantu mengenali sampah, memahami perjalanannya, dan mengubah pengetahuan menjadi
+            kebiasaan yang lebih sadar.
+          </p>
+        </div>
+        <nav class="site-footer__column" aria-label="Jelajahi SADARIN">
+          <span class="site-footer__label">Jelajahi</span>
+          <a href="index.html">Beranda</a>
+          <a href="forum.html">Forum</a>
+          <a href="tentang.html">Tentang</a>
+        </nav>
+        <nav class="site-footer__column" aria-label="Panduan Sampah">
+          <span class="site-footer__label">Panduan</span>
+          <a href="organik.html" aria-current="page">Organik</a>
+          <a href="plastik.html">Plastik</a>
+          <a href="kertas.html">Kertas</a>
+          <a href="residu.html">Residu</a>
+        </nav>
+        <div class="site-footer__context">
+          <span class="site-footer__label">Ingat</span>
+          <p>Aturan pengolahan mengikuti fasilitas di daerahmu.</p>
+          <a href="index.html#panduan-sampah">
+            <span>Lihat semua panduan</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>RPL SMKN 1 GIANYAR / 2026</span>
+        <span>© 2026 SADARIN</span>
+      </div>
+    </div>
+  </footer>
+  <div class="floating-actions">
+    <div class="floating-score">
+      <span class="floating-score__mark" aria-hidden="true"></span>
+      <span class="floating-score__name">SadarPoint</span>
+      <strong class="floating-score__value" data-sadarpoint-value>0</strong>
+      <span class="floating-score__unit">pts</span>
+    </div>
+    <a href="https://wa.me/6285180676238" rel="noopener" target="_blank" class="floating-whatsapp" aria-label="WhatsApp SADARIN — nomor belum tersedia" aria-disabled="true" title="Nomor WhatsApp SADARIN belum tersedia">
+      <span class="floating-whatsapp__label">Tanya SADARIN</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.5 11.8a8.5 8.5 0 0 1-12.7 7.4l-4.3 1.3 1.3-4.2a8.5 8.5 0 1 1 15.7-4.5Z"/>
+        <path d="M8.1 7.5c.2-.4.4-.5.8-.5h.5c.2 0 .4.1.5.4l.8 2c.1.3.1.5-.1.7l-.7.8c-.2.2-.1.4 0 .6.7 1.2 1.7 2.2 3 2.8.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.7-.1l2 .9c.3.1.4.3.4.5 0 .6-.3 1.5-.8 2-.6.5-1.4.7-2.2.5-1.3-.3-2.9-1-4.6-2.5-1.4-1.3-2.4-2.8-2.9-4.1-.4-1-.4-1.8-.1-2.4Z"/>
+      </svg>
+    </a>
+  </div>
   <script src="js/panduan.js?v=20260827"></script>
   <script src="js/sadarin.js?v=20260828"></script>
 </body>
