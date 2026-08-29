@@ -836,7 +836,7 @@
   }
 
   function init() {
-    if (!document.body.classList.contains('feature-page--journal')) ensureFloatingScore();
+    ensureFloatingScore();
     bindRecordForm();
     bindRecordActions();
     bindRecordFilters();
