@@ -4,25 +4,6 @@
   --guide-accent-pale: #eef4ee;
 }
 
-.guide-skip-link {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 100;
-  padding: 10px 14px;
-  border-radius: 6px;
-  background: #fff;
-  color: var(--green-950);
-  font-size: .8rem;
-  font-weight: 700;
-  transform: translateY(-150%);
-  transition: transform 180ms ease;
-}
-
-.guide-skip-link:focus {
-  transform: translateY(0);
-}
-
 .guide-progress {
   position: fixed;
   inset: 0 0 auto;

@@ -548,7 +548,7 @@
   </main>
   <footer class="journal-footer">
     <div>
-      <a href="index.html" aria-label="SADARIN — Beranda">
+      <a href="index.html" aria-label="SADARIN — Beranda">  
         <img src="assets/logo/logo-sadarin.svg" alt="SADARIN">
       </a>
       <p>Satu catatan kecil hari ini, satu pola yang lebih jelas besok.</p>
@@ -558,21 +558,67 @@
       </a>
     </div>
   </footer>
-  <dialog class="sadarin-dialog" data-delete-dialog aria-labelledby="delete-dialog-title">
-    <form method="dialog">
-      <span class="sadarin-dialog__icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5"/>
-        </svg>
-      </span>
-      <h2 id="delete-dialog-title">Hapus catatan ini?</h2>
-      <p data-delete-dialog-copy>Catatan akan dihapus dan ringkasan dihitung ulang.</p>
-      <div>
-        <button class="sadarin-button sadarin-button--quiet" value="cancel">Batal</button>
-        <button class="sadarin-button sadarin-button--danger" value="confirm">Ya, hapus</button>
+
+  <section class="feature-closing" aria-labelledby="closing-title">
+      <div class="feature-closing__container">
+        <div>
+          <span>Mulai dari catatan</span>
+          <h2 id="closing-title">Cek karbon sampahmu ke Bumi Meter.</h2>
+        </div>
+        <a href="bumi-meter.html">
+          <span>Buka Jejak Hijau</span>
+          <b aria-hidden="true">→</b>
+        </a>
       </div>
-    </form>
-  </dialog>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__message">
+        <div>
+          <span class="site-footer__label">SadarPoint</span>
+          <h2>Perjalanan tidak perlu terasa seperti perlombaan.</h2>
+        </div>
+        <div class="site-footer__message-copy">
+          <p>Kembali saat ada jejak baru untuk dikenali, bukan sekadar untuk mengejar angka.</p>
+          <a href="bumi-meter.html">
+            <span>Lihat dampaknya</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <img src="assets/logo/logo-sadarin.svg" alt="SADARIN">
+          <p>
+            SADARIN membantu mengenali sampah, memahami perjalanannya, dan mengubah pengetahuan menjadi
+            kebiasaan yang lebih sadar.
+          </p>
+        </div>
+        <nav class="site-footer__column" aria-label="Fitur SADARIN">
+          <span class="site-footer__label">Fitur</span>
+          <a href="jejak-hijau.html">Jejak Hijau</a>
+          <a href="bumi-meter.html">Bumi Meter</a>
+          <a href="sadarpoint.html" aria-current="page">SadarPoint</a>
+        </nav>
+        <nav class="site-footer__column" aria-label="Jelajahi SADARIN">
+          <span class="site-footer__label">Jelajahi</span>
+          <a href="index.html">Beranda</a>
+          <a href="forum.html">Forum</a>
+          <a href="tentang.html">Tentang</a>
+        </nav>
+        <div class="site-footer__context">
+          <span class="site-footer__label">Cara menghitung</span>
+          <p>Point dihitung dari kategori unik per tanggal lokal, maksimal 25 point per hari.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>RPL SMKN 1 GIANYAR / 2026</span>
+        <span>© 2026 SADARIN</span>
+      </div>
+    </div>
+  </footer>
+
   <div class="sadarin-toast" data-sadarin-toast role="status" aria-live="polite" hidden></div>
   <div class="floating-actions">
     <div class="floating-score">

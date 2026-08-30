@@ -42,6 +42,7 @@
 
   let fallbackIdSequence = 0;
   let toastTimer;
+  let pointDialAnimationFrame;
 
   function getLocalDateKey(date = new Date()) {
     const year = date.getFullYear();
@@ -596,8 +597,69 @@
     }
     if (progressBar) progressBar.style.width = `${progressPercentage}%`;
 
+    const scoreDial = document.querySelector('[data-score-dial]');
+    const scoreRing = document.querySelector('[data-score-ring]');
+    const scoreValue = document.querySelector('[data-total-points]');
+    const journeyMaximum = SADAR_LEVELS[SADAR_LEVELS.length - 1].min;
+    const journeyPercentage = Math.min((scoring.totalPoints / journeyMaximum) * 100, 100);
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (scoreDial) {
+      scoreDial.setAttribute('aria-valuenow', String(Math.min(scoring.totalPoints, journeyMaximum)));
+      scoreDial.setAttribute('aria-valuemax', String(journeyMaximum));
+      scoreDial.setAttribute('aria-label', `${scoring.totalPoints} dari ${journeyMaximum} SadarPoint`);
+    }
+
+    if (scoreRing) {
+      const renderRing = () => {
+        scoreRing.style.strokeDashoffset = String(100 - journeyPercentage);
+        scoreRing.dataset.progress = String(journeyPercentage);
+      };
+
+      if (reducedMotion) renderRing();
+      else window.requestAnimationFrame(() => window.requestAnimationFrame(renderRing));
+    }
+
+    if (scoreValue) {
+      const previousValue = Number(scoreValue.dataset.renderedValue || 0);
+      scoreValue.dataset.renderedValue = String(scoring.totalPoints);
+      window.cancelAnimationFrame(pointDialAnimationFrame);
+
+      if (reducedMotion || previousValue === scoring.totalPoints) {
+        scoreValue.textContent = String(scoring.totalPoints);
+      } else {
+        const startedAt = window.performance.now();
+        const duration = 850;
+        const animateValue = (timestamp) => {
+          const elapsed = Math.min((timestamp - startedAt) / duration, 1);
+          const eased = 1 - Math.pow(1 - elapsed, 3);
+          scoreValue.textContent = String(Math.round(previousValue + ((scoring.totalPoints - previousValue) * eased)));
+          if (elapsed < 1) pointDialAnimationFrame = window.requestAnimationFrame(animateValue);
+        };
+        pointDialAnimationFrame = window.requestAnimationFrame(animateValue);
+      }
+    }
+
     const achievementList = document.querySelector('[data-achievement-list]');
     if (achievementList) achievementList.replaceChildren(...achievements.map(makeAchievementElement));
+  }
+
+  function bindPointSummaryReveal() {
+    const summary = document.querySelector('.point-summary');
+    if (!summary) return;
+
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      summary.classList.add('is-visible');
+      return;
+    }
+
+    summary.classList.add('is-reveal-ready');
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return;
+      summary.classList.add('is-visible');
+      observer.disconnect();
+    }, { threshold: 0.14 });
+    observer.observe(summary);
   }
 
   function ensureFloatingScore() {
@@ -837,6 +899,7 @@
 
   function init() {
     ensureFloatingScore();
+    bindPointSummaryReveal();
     bindRecordForm();
     bindRecordActions();
     bindRecordFilters();
