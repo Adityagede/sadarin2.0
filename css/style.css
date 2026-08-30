@@ -804,6 +804,13 @@ a:focus-visible {
   display: none;
 }
 
+@media (max-width: 767px) {
+  .hero-slide,
+  .hero-container {
+    min-height: clamp(640px, 82svh, 700px);
+  }
+}
+
 /* =========================================================
    REALITAS SAMPAH
 ========================================================= */
@@ -1060,7 +1067,7 @@ a:focus-visible {
 }
 
 .sadarin-tool-card--primary .sadarin-tool-card__visual {
-  background: rgba(255, 255, 255, .86);
+  background: #f0f5f1;
 }
 
 .sadarin-tool-card__image {

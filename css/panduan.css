@@ -4,24 +4,6 @@
   --guide-accent-pale: #eef4ee;
 }
 
-.guide-progress {
-  position: fixed;
-  inset: 0 0 auto;
-  z-index: 60;
-  height: 3px;
-  pointer-events: none;
-}
-
-.guide-progress span {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: var(--yellow);
-  transform: scaleX(0);
-  transform-origin: left;
-  will-change: transform;
-}
-
 @media (min-width: 1024px) {
   .guide-page .nav-guide-trigger {
     color: #fbfaf4;
@@ -637,6 +619,7 @@
 }
 
 .guide-journey__item small {
+  grid-column: 2;
   color: var(--yellow);
   font-size: .64rem;
   font-weight: 700;
@@ -645,12 +628,16 @@
 }
 
 .guide-journey__item h3 {
+  grid-column: 2;
+  min-width: 0;
   margin-top: 5px;
   font-size: 1.32rem;
   letter-spacing: -.03em;
 }
 
 .guide-journey__item p {
+  grid-column: 2;
+  min-width: 0;
   max-width: 540px;
   margin-top: 8px;
   color: rgba(255, 255, 255, .65);

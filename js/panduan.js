@@ -12,19 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const desktopGuidePanel = desktopGuide?.querySelector('.guide-mega');
   const desktopMedia = window.matchMedia('(min-width: 1024px)');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const progress = document.querySelector('.guide-progress span');
-
   let scrollTicking = false;
   let guideCloseTimer;
 
   function updateScrollState() {
     siteHeader?.classList.toggle('is-scrolled', window.scrollY > 12);
-
-    if (progress) {
-      const available = document.documentElement.scrollHeight - window.innerHeight;
-      const value = available > 0 ? Math.min(window.scrollY / available, 1) : 0;
-      progress.style.transform = `scaleX(${value})`;
-    }
 
     scrollTicking = false;
   }
