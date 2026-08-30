@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=20260828">
-  <link rel="stylesheet" href="css/fitur.css?v=20260829">
+  <link rel="stylesheet" href="css/fitur.css?v=20260830-2">
   <link rel="icon" href="assets/logo/logo-sadarin.svg">
 </head>
 <body class="feature-page feature-page--bumi">
@@ -232,25 +232,30 @@
               perkiraan kg CO₂e yang lebih mudah dipahami.
             </p>
           </div>
-          <div class="bumi-hero__earth" aria-hidden="true">
-            <img src="assets/images/features/bumi-meter.png" alt="">
-          </div>
         </div>
       </div>
     </section>
     <section class="feature-main" aria-labelledby="reading-title">
       <div class="feature-main__container">
-        <header class="journal-intro">
-          <span class="feature-section-label">Pembacaan dari Jejak Hijau</span>
-          <h2 class="feature-section-title" id="reading-title">Perkiraan dampakmu</h2>
+        <header class="bumi-intro">
+          <div class="bumi-intro__heading">
+            <span class="feature-section-label">Pembacaan dari Jejak Hijau</span>
+            <h2 class="feature-section-title" id="reading-title">Perkiraan dampakmu</h2>
+          </div>
           <p class="feature-section-copy">
-            Tidak ada formulir baru di sini. Semua angka berasal dari catatan yang tersimpan pada
-            perangkat ini.
+            Ringkasan ini mengubah catatan sampahmu menjadi perkiraan emisi yang lebih mudah dibaca.
+            Tidak ada formulir tambahan—semuanya berasal dari Jejak Hijau yang tersimpan di perangkat ini.
           </p>
         </header>
         <div class="bumi-reading">
-          <div class="bumi-reading__today">
-            <span>Hari ini</span>
+          <section class="bumi-reading__today" aria-labelledby="today-impact-title">
+            <header class="bumi-panel-heading">
+              <div>
+                <span>Pembacaan utama</span>
+                <h3 id="today-impact-title">Dampak hari ini</h3>
+              </div>
+              <small>Dari catatan terbaru</small>
+            </header>
             <div class="bumi-reading__number">
               <strong data-co2-today>0</strong>
               <small>kg CO₂e</small>
@@ -260,27 +265,33 @@
               Catat di Jejak Hijau
               <span aria-hidden="true">→</span>
             </a>
-          </div>
+          </section>
           <div class="bumi-reading__details">
-            <div class="bumi-reading__lifetime">
-              <span>Total sepanjang catatan</span>
+            <section class="bumi-reading__lifetime" aria-labelledby="lifetime-impact-title">
+              <span>Akumulasi</span>
+              <h3 id="lifetime-impact-title">Total sepanjang catatan</h3>
               <strong>
                 <span data-co2-lifetime>0</span>
                 kg CO₂e
               </strong>
-            </div>
-            <div class="bumi-breakdown">
-              <span>Perkiraan menurut kategori</span>
+              <small>Gabungan semua jejak yang tersimpan di perangkat ini.</small>
+            </section>
+            <section class="bumi-breakdown" aria-labelledby="category-impact-title">
+              <span>Rincian</span>
+              <h3 id="category-impact-title">Perkiraan menurut kategori</h3>
               <ul data-co2-breakdown></ul>
-            </div>
+            </section>
           </div>
         </div>
         <aside class="bumi-method-note">
-          <strong>Tentang angka ini</strong>
-          <p>
-            Estimasi edukatif dihitung dari berat sampah × faktor kategori. Angka ini membantu membaca
-            pola catatan dan bukan pengganti perhitungan jejak karbon profesional.
-          </p>
+          <span class="bumi-method-note__mark" aria-hidden="true">i</span>
+          <div>
+            <strong>Tentang angka ini</strong>
+            <p>
+              Estimasi edukatif dihitung dari berat sampah × faktor kategori. Angka ini membantu membaca
+              pola catatan dan bukan pengganti perhitungan jejak karbon profesional.
+            </p>
+          </div>
         </aside>
       </div>
     </section>

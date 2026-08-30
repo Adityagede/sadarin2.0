@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=20260828">
-  <link rel="stylesheet" href="css/fitur.css?v=20260829">
+  <link rel="stylesheet" href="css/fitur.css?v=20260830">
   <link rel="icon" href="assets/logo/logo-sadarin.svg">
 </head>
 <body class="feature-page feature-page--points">
@@ -223,13 +223,15 @@
             <li aria-current="page">SadarPoint</li>
           </ol>
         </nav>
-        <div class="feature-hero__content">
-          <span class="feature-identity">SadarPoint · Perjalanan kesadaran</span>
-          <h1 id="page-title">Kesadaran tumbuh perlahan, satu kategori setiap hari.</h1>
-          <p class="feature-hero__lead">
-            SadarPoint bukan hadiah dari banyaknya sampah. Point berasal dari kategori unik yang kamu
-            kenali per hari—sebuah catatan sederhana tentang perhatian yang berkembang.
-          </p>
+        <div class="point-hero__grid">
+          <div class="feature-hero__content">
+            <span class="feature-identity">SadarPoint · Perjalanan kesadaran</span>
+            <h1 id="page-title">Kesadaran tumbuh perlahan, satu kategori setiap hari.</h1>
+            <p class="feature-hero__lead">
+              SadarPoint bukan hadiah dari banyaknya sampah. Point berasal dari kategori unik yang kamu
+              kenali per hari—sebuah catatan sederhana tentang perhatian yang berkembang.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -245,18 +247,47 @@
         </header>
         <div class="point-summary">
           <section class="sadarin-level" aria-labelledby="level-heading">
-            <span class="sadarin-level__label" id="level-heading">Level saat ini</span>
-            <strong class="sadarin-level__name" data-level-name>Langkah Awal</strong>
-            <div class="sadarin-level__score">
-              <strong data-total-points>0</strong>
-              <span>SadarPoint</span>
+            <div class="sadarin-level__heading">
+              <span class="sadarin-level__label" id="level-heading">Level saat ini</span>
+              <strong class="sadarin-level__name" data-level-name>Langkah Awal</strong>
+              <p>Bukan perlombaan—ini cara sederhana untuk melihat perhatian yang terus bertumbuh.</p>
             </div>
-            <div class="sadarin-level__progress" role="progressbar" aria-label="Progres menuju level berikutnya" aria-valuemin="0" aria-valuenow="0" aria-valuemax="50" data-level-progress>
-              <span data-level-progress-bar></span>
+            <div class="sadarin-level__overview">
+              <div class="sadarin-level__dial" role="progressbar" aria-label="0 dari 500 SadarPoint" aria-valuemin="0" aria-valuenow="0" aria-valuemax="500" data-score-dial>
+                <svg viewBox="0 0 140 140" aria-hidden="true">
+                  <circle class="sadarin-level__dial-track" cx="70" cy="70" r="58" pathLength="100"></circle>
+                  <circle class="sadarin-level__dial-progress" cx="70" cy="70" r="58" pathLength="100" data-score-ring></circle>
+                </svg>
+                <div class="sadarin-level__score">
+                  <strong data-total-points>0</strong>
+                  <span>SadarPoint</span>
+                  <small>dari 500</small>
+                </div>
+              </div>
+              <div class="sadarin-level__next">
+                <span>Menuju tingkat berikutnya</span>
+                <p data-level-next>50 point menuju Mulai Sadar</p>
+                <div class="sadarin-level__progress" role="progressbar" aria-label="Progres menuju level berikutnya" aria-valuemin="0" aria-valuenow="0" aria-valuemax="50" data-level-progress>
+                  <span data-level-progress-bar></span>
+                </div>
+              </div>
             </div>
-            <p data-level-next>50 point menuju Mulai Sadar</p>
+            <div class="sadarin-level__rules" aria-label="Cara SadarPoint bertambah">
+              <div>
+                <span>Catatan pertama</span>
+                <strong>+10 pts</strong>
+              </div>
+              <div>
+                <span>Kategori berikutnya</span>
+                <strong>+5 pts</strong>
+              </div>
+              <div>
+                <span>Batas per hari</span>
+                <strong>25 pts</strong>
+              </div>
+            </div>
             <div class="sadarin-level__today">
-              <span>Hari ini</span>
+              <span>Ritme hari ini</span>
               <strong>
                 <span data-today-points>0</span>
                 / 25 pts
@@ -265,7 +296,10 @@
           </section>
           <section class="sadarin-achievements" aria-labelledby="achievement-heading">
             <div class="sadarin-achievements__head">
-              <span id="achievement-heading">Penanda perjalanan</span>
+              <div>
+                <span id="achievement-heading">Penanda perjalanan</span>
+                <small>Lima momen yang layak diingat.</small>
+              </div>
               <strong data-achievement-count>0 / 5 tercapai</strong>
             </div>
             <ul data-achievement-list></ul>
